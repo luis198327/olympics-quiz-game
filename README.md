@@ -1,100 +1,191 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Olympics Quiz Game
 
-Welcome luis198327,
+## Code Institute Mile Stone 2 Project - Interactive Front End Site
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. The last update to this file was: **July 1, 2021**
+The Code Institute project brief was to create and build an interactive front end site.  The site should respond to users' actions, allow users to engage with data, alter the way the site displays the information to achieve their preferred goals, using HTML, CSS and JavaScript while following UX industry conventions. As per the Code Institute course and methods, this was designed from a Desktop to Mobile site, so uses media queries within the CSS to have max-width break points. This project is for educational use only.
 
-## Gitpod Reminders
+<!provide link to responsive preview >
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Olympics Quiz Game (provide link to final web page here) 
+The website has been created to provide a fun quiz game based on the up comming Olympic Games in Tokyo, Japan.  It is aimed at providing some general knowledge of the country and the games themselves in 2021 and past games.
 
-`python3 -m http.server`
+## User Experience (UX)
 
-A blue button should appear to click: _Make Public_,
+### Strategy - User Stories
+#### Site Owners Goals
++ The main goal of the site is to provide a challenging and informative quiz to entertain online users.
 
-Another blue button should appear to click: _Open Browser_.
+#### External User Goals
++ The site’s users want to play an online quiz to test general/specific knowledge based on the Olympics Games and the country of Japan.
++ Able to keep track of scores and improve their scores when wishing to attempt the quiz again.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### Scope
+In this release, I wanted to include:
++ A welcome message to the site confirming what the quiz is about.
++ A gaming area which will list the questions and provide user feedback once a question has been answered, either by messages or images.
++ A score tracking system to confirm how many questions a user has answered correctly
++ The ability to reset the game to reattempt and better a previous score.
 
-A blue button should appear to click: _Make Public_,
+### Structure
+The layout of the site will have 2 HTML pages.
++ A home page
++ A game page
 
-Another blue button should appear to click: _Open Browser_.
+The home page will contain a welcome message once the site is displayed so the user will know what the site is providing - a quiz game on the Olympic Games.  There will be a background image and a play button to commence the game.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+The second page will form the structure of the quiz itself and the use of JavaScript will bring in each question of the quiz. Users scores will be recorded as the game progresses with a message displayed at the end, and the ability to restart the quiz, taking you back to the home page.
 
-To log into the Heroku toolbelt CLI:
+### Skeleton
+I used wireframes to put together a very basic mock-up of the site based on a desktop/tablet and mobile devices.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+The wireframe can be found <<insert wireframe>>.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+### Surface
 
-------
+#### Typography 
++ Raleway will be used as the site's main font type.
++ The fall back font type is Sans Serif should the imported fonts do not load correctly.
 
-## Release History
+#### Colours
++ Font colour will be predominately black (unless hover over effects or JavaScript take an effect).  The font colour allows the text to stand out against the background used.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+<<<(may need to add context on colours for the question/answer boxes)>>>
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+#### Imagery
++ A background image of Japan will be used across both HTML pages. This will provide site consistency. A light grey see through box will denote the gaming area.
++ The site will use appropriate images where applicable to provide user feedback on certain questions.
++ The favicon used is the Olympic rings.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+## Features
+The site features 2 HTML pages.  The main page will load with a welcome message on page landing.  It will provide a play button to start the quiz.  
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+The quiz will then run, by linking to the second HTML page, where the user will be asked each question in turn.  The quiz will comprise of 10 multiple questions from a library of 20 questions.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+Feedback will be provided to the user if they have answered a question correctly or incorrectly.  A message or image will display to provide this feedback.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+There will a score tracking system so the user knows how many questions have been answered correctly throughout and a summary at the end of the quiz.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+There will be the option to restart the quiz to attempt a better score.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+<<provide screen shots of the site>>
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### Features Left To Implement
+Additional features that I would like to include in a future release would be to:
++ Have a bigger suite of questions (a library) where it would generate a wider question set to the user, making the site more interesting, more variety and less predictable.
++ Set a time limit for the quiz itself e.g. a maximum time of ten minutes to complete or 15 seconds per question so it adds more interactivity and more urgency and risk for the user.
++ To store higher scores and show these within a table on a separate HTML page.  This would seem more appropriate when the library of questions is more extensive.
++ To share user scores and challenge friends using social media links such as facebook and twitter.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+## Technologies Used
+### Languages Used
++ HTML5
++ CSS3
++ Javascript
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+### Frameworks, Libraries & Programs Used
++ [GitPod](https://www.gitpod.io/) - used as the development environment for my website. I also used Git for Version Control in the project.
++ [GitHub](https://github.com/) - used to store the projects code after being pushed from GitPod.
++ [Balsamiq](https://balsamiq.com/) - used to create the wireframes during the design process.
++ [Google fonts](https://fonts.google.com/) - used to import the 'Raleway' font into the style.css file which is used on all pages throughout the project.
++ [WebAim](https://webaim.org/resources/contrastchecker/) - used to check the contrast of foreground and background text/colours to ensure they pass.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+<<<
++ [Font Awesome](https://fontawesome.com/) - used to import icons into my website for social media links as an example.
+>>>
 
-------
++ Google Images - used to search for images for website including olympic rings and hero image.  Details can be found under the Credits section.
++ [Icons8](https://icons8.com/) - used to import the favicon olympic ring icon image.
++ [Favicon](https://favicon.io/) - used to convert the image from Icon8 into an ico file.
++ [W3Schools](https://www.w3schools.com/) - used to refer to as additional support and to insert code into my webpage.  The code used is referenced in the Code section below. 
++ [W3C HTML Validation Service](https://validator.w3.org/#validate_by_input) - used to check the markup validity of Web documents in HTML.
++ [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input) - used to check the validity of my CSS in the project.
++ [JShint](https://jshint.com/) - used to check the validity of my JavaScript code in my project.
++ [Python Tutor](http://www.pythontutor.com/) - used to check my JavaScript code in the project. 
++ [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) - used to test site, check console logs and run Lighthouse reports.
++ [TinyPNG](https://tinypng.com/) - used to compress my images so that they reduce file size and load faster within the site.
++ [istockphoto](https://www.istockphoto.com/) - used to obtain welcome image.
 
-## FAQ about the uptime script
+## Testing
+### Testing User Stories From User Experience (UX) Section
+#### Site Owners Goals
++ The main goal of the site is to provide a challenging and informative quiz to entertain online users.
 
-**Why have you added this script?**
+    <<Add content>>
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+#### External User Goals
++ The site’s users want to play an online quiz to test general/specific knowledge based on the Olympics Games and the country of Japan.
 
-**How will this affect me?**
+<<Add content>>
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
++ Able to keep track of scores and improve their scores when wishing to attempt the quiz again.
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+<<Add content>>
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+### Further Testing
+ <<Add content>
 
-**So….?**
+#### Validation
+I used the W3C Markup Validation Service to check the Markup and W3C CSS Validation Service to check the CSS validity of the site.  I also used JShint to check the functionality of my JavaScript code.  I used these during and at the end of the project to regularly identify issues.  <<Update when tested - All HTML pages, and the CSS styling page and javascript have passed with no errors/issues highlighted.>>
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+<<Add screen shots of the code passing the validation sites>>
 
-**Can I opt out?**
+#### Issues I Overcome
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+<<Add content or delete section>>
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+### Known Bugs/Improvements   
+<<Add content>>
 
-**Anything more?**
+## Deployment  - review as there have been changes to GITPOD/GITHUB*****
+My project was developed using the IDE, Gitpod. 
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+The site was deployed to GitHub pages. The steps to deploy are as follows:
 
----
++ Within the GitHub repository, navigate to the Settings tab.
++ Then select the Pages sub-menu option on the left, which takes you to GitHub Pages. 
++ Within the source section drop-down menu, select the Master Branch and click on save.
++ Once this has been saved, the page will confirm that the site is ready to be published and provides the URL address.
++ Refreshing the page will confirm the website has been deployed, again providing the URL address.
++ The deployed URL is <<Add deployed site URL>>
 
-Happy coding!
+The deployed site will update automatically upon new commits to the master branch. For the site to deploy correctly on GitHub pages, the landing page must be named index.html.
+
+### Making A Local Clone
+You can clone this repository by:
++ Logging into GitHub and locate the GitHub Repository luis198327/olympics-quiz-game
++ Under the repository name and with the Code tab displayed by default, click the dropdown "Code" option.
++ This will give you the option to copy the repository using HTTPS by clicking the copy button.
++ Open Git Bash.
++ Change the current working directory to the location where you want the cloned directory to be made.
++ Type git clone and paste the URL i.e. $ git clone https://github.com/luis198327/olympics-quiz.  <<update URL with link>>
++ Press Enter, and your local clone will be created.
+
+Or simply clone this repository directly into the editor of your choice by pasting $ git clone <<insert URL of live site>> into your terminal. To cut ties with this GitHub repository, type git remote rm origin into the terminal.
+
+## Credits
+### Content
++ All content was written by the developer, unless referenced below.
+
+### Code
+
+<<update section + W3School - To produce a responsive navigational bar, W3Schools was used and code/script added to the HTML page to produce this.  This has then been tweaked accordingly to style for this project.>>
+
+### Media
++ [rawpixel](https://www.rawpixel.com/) - used to obtain welcome image of tokyo background.
++ [pinterest](https://www.pinterest.co.uk/) - used to obtain the olympic rings and feathers image on the home page.
+
+### Resources
+I used the following resources to obtain ideas for the questions within the quiz:
++ [Olympics main web site](https://olympics.com/tokyo-2020/en/)
++ [Google](https://www.google.com/) - used for general searching
++ [Wikipedia](https://en.wikipedia.org/wiki/2020_Summer_Olympics)
+
+I also used the following resources to bring inspiration on creating quiz games using javascript:
++ [youtube](https://www.youtube.com/playlist?list=PLB6wlEeCDJ5Yyh6P2N6Q_9JijB6v4UejF)
++ [simple steps code](https://simplestepscode.com/javascript-quiz-tutorial/)
+
+### Acknowledgements
++ I used the Code Institute GitHub template as a basis for setting up my repository.
++ I used W3Schools to assist with some features and to develop my understanding.
++ I would like to thank my mentor Spencer Barriball for his review and ongoing support with this project.
++ This project is for educational use only and was created for the Code Institute Module of an Interactive Front End Site.
