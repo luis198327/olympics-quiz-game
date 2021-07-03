@@ -1,7 +1,6 @@
 const question = document.getElementById("question");
 const answers = Array.from(document.getElementsByClassName("answer"));
-console.log(answers);
-/*const questionMaximum = 10; //number of questions quiz will ask
+
 let currentQuestion = {}; //current question
 let score = 0; //score counter
 let questionNumber = 0; //question number quiz is on
@@ -16,13 +15,15 @@ let questionLibrary = [ //questions are stored here
             correct: "2"
         },]
 
+const questionMaximum = 10; //number of questions quiz will ask*/
+
 /**
  * New game
- *//*
+ */
 function playGame() {
     questionNumber = 0;
     score = 0;
-    unusedQuestions = [...questionLibrary]  //uses full copy of the question library
+    unusedQuestions = [...questionLibrary];  //uses full copy of the question library
     newQuestion();
 }
 
@@ -36,5 +37,5 @@ function newQuestion() {
     question.innertext = currentQuestion.question;
 };
 
-
-playGame();*/
+*/
+playGame();
