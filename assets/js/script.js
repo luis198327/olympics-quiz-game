@@ -15,7 +15,7 @@ let questionLibrary = [ //questions are stored here
             correct: "2"
         },]
 
-const questionMaximum = 10; //number of questions quiz will ask*/
+const questionMaximum = 10; //number of questions quiz will ask
 
 /**
  * New game
@@ -27,15 +27,14 @@ function playGame() {
     newQuestion();
 }
 
-/**
+/*
  * Obtains new question from question library
- *//*
+ */
 function newQuestion() {
     questionNumber++;
-    const questionIndex = Math.floor(Math.random() * unusedQuestions.length);   
-    currentQuestion = unusedQuestions[questionIndex];
-    question.innertext = currentQuestion.question;
+    const questionLibIndex = Math.floor(Math.random() * unusedQuestions.length);   
+    currentQuestion = unusedQuestions[questionLibIndex];
+    question.innerHTML = currentQuestion.question;
 };
 
-*/
 playGame();

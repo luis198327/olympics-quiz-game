@@ -84,3 +84,8 @@ body {
     height: auto;
     background-color: rgba(255, 255, 255, 0.6);
 }
+
+.game-area > h3 {
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.6);
+}
