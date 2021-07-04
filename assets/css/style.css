@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Raleway', sans-serif;;
+    font-family: 'Lato', sans-serif;
 }
 
 /* Background image of japan*/
@@ -33,6 +33,7 @@ body {
 #welcome h1 {
     text-align: center;
     padding: 0.5rem 0;
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
 #welcome img {

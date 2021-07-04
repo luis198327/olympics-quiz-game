@@ -43,7 +43,7 @@ The wireframe can be found <<insert wireframe>>.
 ### Surface
 
 #### Typography 
-+ Raleway will be used as the site's main font type.
++ Lato will be used as the site's main font type.
 + The fall back font type is Sans Serif should the imported fonts do not load correctly.
 
 #### Colours
@@ -86,7 +86,7 @@ Additional features that I would like to include in a future release would be to
 + [GitPod](https://www.gitpod.io/) - used as the development environment for my website. I also used Git for Version Control in the project.
 + [GitHub](https://github.com/) - used to store the projects code after being pushed from GitPod.
 + [Balsamiq](https://balsamiq.com/) - used to create the wireframes during the design process.
-+ [Google fonts](https://fonts.google.com/) - used to import the 'Raleway' font into the style.css file which is used on all pages throughout the project.
++ [Google fonts](https://fonts.google.com/) - used to import the 'Lato' font into the style.css file which is used on all pages throughout the project.
 + [WebAim](https://webaim.org/resources/contrastchecker/) - used to check the contrast of foreground and background text/colours to ensure they pass.
 
 <<<
