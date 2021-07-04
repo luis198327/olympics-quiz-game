@@ -193,6 +193,9 @@ function newQuestion() {
     for (const answer of answers) {     
         const number = answer.dataset['answer'];
         answer.innerHTML = currentQuestion['answer' + number];
-    }}
+    }
+    //Remove question from unused questions
+    unusedQuestions.splice(questionLibIndex, 1);
+};
 
     playGame();
