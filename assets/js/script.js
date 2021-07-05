@@ -198,4 +198,19 @@ function newQuestion() {
     unusedQuestions.splice(questionLibIndex, 1);
 };
 
+for (answer of answers) {
+    answer.addEventListener('click', function(event){
+        answer['answer'];    
+        console.log(event.target);
+
+     
+
+        });
+    };
+        /*
+        answers.forEach(answer => {
+            answer.addEventListener('click', (e) => {
+                console.log(e.target);
+            });
+        });*/
     playGame();
