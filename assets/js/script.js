@@ -200,17 +200,17 @@ function newQuestion() {
 
 for (answer of answers) {
     answer.addEventListener('click', function(event){
-        answer['answer'];    
-        console.log(event.target);
+        answer['answer'];
+        
+        const selectedChoice = event.target;
+        const selectedAnswer = selectedChoice.dataset['answer'];
 
-     
-
+        const correctIncorrect = 
+        selectedAnswer == currentQuestion.correct ? "correct" : "incorrect";
+        console.log(correctIncorrect); 
+        
+        newQuestion();
         });
     };
-        /*
-        answers.forEach(answer => {
-            answer.addEventListener('click', (e) => {
-                console.log(e.target);
-            });
-        });*/
+            
     playGame();
