@@ -184,6 +184,11 @@ function playGame() {
  * Obtains new question from question library
  */
 function newQuestion() {
+        // placeholder for what to do when game has reached its question limit of 10
+     /*   if (questionNumber >= questionMaximum) {
+            //need to determine what happens - show image?;
+        }
+*/
     questionNumber++;  //increments question number
     const questionLibIndex = Math.floor(Math.random() * unusedQuestions.length); //to obtain random question
     currentQuestion = unusedQuestions[questionLibIndex];  //ref to question
