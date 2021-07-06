@@ -210,11 +210,18 @@ for (answer of answers) {
         const selectedChoice = event.target;
         const selectedAnswer = selectedChoice.dataset['answer'];
 
+        //determines if the correct answer has been selected or not
         const correctIncorrect = 
         selectedAnswer == currentQuestion.correct ? "correct" : "incorrect";
-        console.log(correctIncorrect); 
+        selectedChoice.parentElement.classList.add(correctIncorrect);
         
-        newQuestion();
+        //function to remove the previous class and move to new question after two seconds
+        setTimeout(function(){ 
+            selectedChoice.parentElement.classList.remove(correctIncorrect);
+            newQuestion();
+         }, 2000);
+
+              
         });
     };
             
