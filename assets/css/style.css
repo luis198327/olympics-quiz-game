@@ -114,10 +114,13 @@ body {
     visibility: hidden;
 
 }
-/*
-.correct::after {
-    content: "Correct";
-    display: block;
+
+.newDiv {
+    text-align: center;
+    padding: 0 2rem;
+}
+.correct {
+    background: gold;
     visibility: visible;
 }
 /*
