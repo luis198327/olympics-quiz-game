@@ -215,12 +215,6 @@ for (answer of answers) {
         selectedAnswer == currentQuestion.correct ? "correct" : "incorrect";
         selectedChoice.parentElement.classList.add(correctIncorrect);
         
-        //inserts new div to inform correct answer
-        const newItem = document.createElement('div');
-        newItem.innerHTML = '<h3 class="newDiv">Correct  <i class="fas fa-medal"></i></h3>';
-        selectedChoice.replaceWith(newItem);
-
-
         //function to remove the previous class and move to new question after two seconds
         setTimeout(function(){ 
             selectedChoice.parentElement.classList.remove(correctIncorrect);
