@@ -110,10 +110,29 @@ body {
 /* Styling applied where correct or incorrect answer given */
 
 .correct {
-    background: gold;
-    visibility: visible;
+    background: #008000;
 }
-/*
+
+.correct::after {
+    content: '\2705'; /*unicode symbol for a tick */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: xx-large;
+    margin-left: 0.2rem;
+}
+
 .incorrect {
-    background-color: red;
+    background: #ff0033;
+}
+.incorrect::after {
+    content: '\274C'; /*unicode symbol for a cross */
+    color: #ff0033;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: xx-large;
+    margin-left: 0.2rem;
 }
