@@ -135,7 +135,7 @@ I used the W3C Markup Validation Service to check the Markup and W3C CSS Validat
 <<Add content or delete section>>
 
 ### Known Bugs/Improvements   
-<<Add content>>
++ I would like to have provided an image or message to confirm if the answer was correct or incorrect.  I tried to insert a div using JavaScript to provide a correct or incorrect message, but couldn't quite get the code to provide the correct user feedback. Was only applying to one class type.  As a temporary fix, i used CSS to style an after pseudo class to insert a tick or cross to provide additional user feedback.
 
 ## Deployment  - review as there have been changes to GITPOD/GITHUB*****
 My project was developed using the IDE, Gitpod. 
