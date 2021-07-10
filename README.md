@@ -104,6 +104,7 @@ Additional features that I would like to include in a future release would be to
 + [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) - used to test site, check console logs and run Lighthouse reports.
 + [TinyPNG](https://tinypng.com/) - used to compress my images so that they reduce file size and load faster within the site.
 + [istockphoto](https://www.istockphoto.com/) - used to obtain welcome image.
++ [unicode table](https://unicode-table.com/en/) - used to find the CSS unicode to allow me to insert a tick and cross symbol to provide user feedback if a correct answer is provided.
 
 ## Testing
 ### Testing User Stories From User Experience (UX) Section
