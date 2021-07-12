@@ -1,6 +1,7 @@
 const question = document.getElementById("question");
 const answers = Array.from(document.getElementsByClassName("answer"));
 const questionNumberDisplay = document.getElementById("question-no-display");
+const scoreTotal = document.getElementById("score");
 
 let currentQuestion = {}; //current question
 let score = 0; //score counter
@@ -205,6 +206,7 @@ function newQuestion() {
     unusedQuestions.splice(questionLibIndex, 1);
 };
 
+//checks which answer is selected via click event listener
 for (answer of answers) {
     answer.addEventListener('click', function(event){
         answer['answer'];
@@ -217,6 +219,11 @@ for (answer of answers) {
         selectedAnswer == currentQuestion.correct ? "correct" : "incorrect";
         selectedChoice.parentElement.classList.add(correctIncorrect);
         
+        //checks if correct and then increases score by 1
+        if(correctIncorrect === "correct") {
+            scoreBoard(1);
+        };
+
         //function to remove the previous class and move to new question after two seconds
         setTimeout(function(){ 
             selectedChoice.parentElement.classList.remove(correctIncorrect);
@@ -226,5 +233,13 @@ for (answer of answers) {
               
         });
     };
-            
+          
+    /**
+     * Function to update score
+     */
+     function scoreBoard(total) {
+        score +=total;
+        scoreTotal.innerHTML = score;
+    };
+
     playGame();
