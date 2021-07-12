@@ -187,10 +187,11 @@ function playGame() {
  */
 function newQuestion() {
         // placeholder for what to do when game has reached its question limit of 10
-     /*   if (questionNumber >= questionMaximum) {
-            //need to determine what happens - show image?;
+        if (questionNumber >= questionMaximum) {
+            localStorage.setItem("currentScore", score);
+              return window.location.assign("/finish.html");
         }
-*/
+
     questionNumber++;  //increments question number
     questionNumberDisplay.innerHTML = `${questionNumber}/${questionMaximum}`; //amends question number display
     const questionLibIndex = Math.floor(Math.random() * unusedQuestions.length); //to obtain random question
