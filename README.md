@@ -22,21 +22,24 @@ The website has been created to provide a fun quiz game based on the up comming 
 ### Scope
 In this release, I wanted to include:
 + A welcome message to the site confirming what the quiz is about.
-+ A gaming area which will list the questions and provide user feedback once a question has been answered, either by messages or images.
-+ A score tracking system to confirm how many questions a user has answered correctly
++ A gaming area which will list the questions and provide user feedback once a question has been answered.
++ A score tracking system to confirm how many questions a user has answered correctly.
 + The ability to reset the game to reattempt and better a previous score.
 
 ### Structure
-The layout of the site will have 2 HTML pages.
+The layout of the site will have 3 HTML pages.
 + A home page
 + A game page
++ A results page
 
 The home page will contain a welcome message once the site is displayed so the user will know what the site is providing - a quiz game on the Olympic Games.  There will be a background image and a play button to commence the game.
 
-The second page will form the structure of the quiz itself and the use of JavaScript will bring in each question of the quiz. Users scores will be recorded as the game progresses with a message displayed at the end, and the ability to restart the quiz, taking you back to the home page.
+The second page will form the structure of the quiz itself and the use of JavaScript will bring in each question of the quiz. Users scores will be recorded as the game progresses.
+
+Once the game quesiton limit has been reached, it will display the users score, and the ability to restart the quiz, taking you back to the home page.
 
 ### Skeleton
-I used wireframes to put together a very basic mock-up of the site based on a desktop/tablet and mobile devices.
+I used wireframes to put together a very basic mock-up of the site based on a desktop/tablet and mobile devices. This did develop during the project as my understanding of JavaScript progressed.  I was going to keep it to 2 html pages, but found it easier to creare a third page for the results page separately.
 
 The wireframe can be found <<insert wireframe>>.
 
@@ -57,13 +60,15 @@ The wireframe can be found <<insert wireframe>>.
 + The favicon used is the Olympic rings.
 
 ## Features
-The site features 2 HTML pages.  The main page will load with a welcome message on page landing.  It will provide a play button to start the quiz.  
+The site features 3 HTML pages.  The main page will load with a welcome message on page landing.  It will provide a play button to start the quiz.  
 
 The quiz will then run, by linking to the second HTML page, where the user will be asked each question in turn.  The quiz will comprise of 10 multiple questions from a library of 20 questions.
 
-Feedback will be provided to the user if they have answered a question correctly or incorrectly.  A message or image will display to provide this feedback.
+Feedback will be provided to the user if they have answered a question correctly or incorrectly.  
 
-There will a score tracking system so the user knows how many questions have been answered correctly throughout and a summary at the end of the quiz.
+There will a score tracking system so the user knows how many questions have been answered correctly throughout.
+
+Once the quiz has been completed, a results page will load showing the score.
 
 There will be the option to restart the quiz to attempt a better score.
 
@@ -72,6 +77,7 @@ There will be the option to restart the quiz to attempt a better score.
 ### Features Left To Implement
 Additional features that I would like to include in a future release would be to:
 + Have a bigger suite of questions (a library) where it would generate a wider question set to the user, making the site more interesting, more variety and less predictable.
++ Adapt the user feedback when a question has been answered by showing an image or further information on the subject question and answer.  This will provide more meaning and learning.
 + Set a time limit for the quiz itself e.g. a maximum time of ten minutes to complete or 15 seconds per question so it adds more interactivity and more urgency and risk for the user.
 + To store higher scores and show these within a table on a separate HTML page.  This would seem more appropriate when the library of questions is more extensive.
 + To share user scores and challenge friends using social media links such as facebook and twitter.
@@ -105,6 +111,7 @@ Additional features that I would like to include in a future release would be to
 + [TinyPNG](https://tinypng.com/) - used to compress my images so that they reduce file size and load faster within the site.
 + [istockphoto](https://www.istockphoto.com/) - used to obtain welcome image.
 + [unicode table](https://unicode-table.com/en/) - used to find the CSS unicode to allow me to insert a tick and cross symbol to provide user feedback if a correct answer is provided.
++ [free images](https://www.freeimages.com/) - used to obtain images of medals. Refer to credits section for additional details.
 
 ## Testing
 ### Testing User Stories From User Experience (UX) Section
@@ -174,6 +181,7 @@ Or simply clone this repository directly into the editor of your choice by pasti
 ### Media
 + [rawpixel](https://www.rawpixel.com/) - used to obtain welcome image of tokyo background.
 + [pinterest](https://www.pinterest.co.uk/) - used to obtain the olympic rings and feathers image on the home page.
++ [free images](https://www.freeimages.com/) - used to obtail the images of the 3 medals used on the results/finish page.
 
 ### Resources
 I used the following resources to obtain ideas for the questions within the quiz:
