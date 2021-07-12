@@ -1,5 +1,6 @@
 const question = document.getElementById("question");
 const answers = Array.from(document.getElementsByClassName("answer"));
+const questionNumberDisplay = document.getElementById("question-no-display");
 
 let currentQuestion = {}; //current question
 let score = 0; //score counter
@@ -190,6 +191,7 @@ function newQuestion() {
         }
 */
     questionNumber++;  //increments question number
+    questionNumberDisplay.innerHTML = `${questionNumber}/${questionMaximum}`; //amends question number display
     const questionLibIndex = Math.floor(Math.random() * unusedQuestions.length); //to obtain random question
     currentQuestion = unusedQuestions[questionLibIndex];  //ref to question
     question.innerHTML = currentQuestion.question;  //set HTML to the question property
