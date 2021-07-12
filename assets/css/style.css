@@ -61,11 +61,14 @@ body {
 }
 
 /*quiz.html specific styling */
-
 /*question area */
 
+#question-no {
+    margin-bottom: 0.5rem;
+}
+
 #question {
-    margin-bottom: 1.4rem;
+    margin: 0 0;
     padding: 0.5rem;
 }
 
