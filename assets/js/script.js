@@ -186,7 +186,7 @@ function playGame() {
  * Obtains new question from question library
  */
 function newQuestion() {
-        // placeholder for what to do when game has reached its question limit of 10
+        // When games reaches the 10 question limit, the page will load the finish page
         if (questionNumber >= questionMaximum) {
             localStorage.setItem("currentScore", score);
               return window.location.assign("/finish.html");
