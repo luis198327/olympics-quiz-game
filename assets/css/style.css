@@ -107,8 +107,18 @@ body {
 }
 
 #score-board {
-    padding: 0.5rem;
+    padding: 1rem;
     margin: 0.1rem;
+}
+
+#score {
+    border: 0.1rem black solid;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0.5rem;
 }
 
 /* Styling applied where correct or incorrect answer given */
