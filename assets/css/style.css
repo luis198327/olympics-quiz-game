@@ -60,6 +60,12 @@ body {
     font-weight: bold;
 }
 
+#play-btn:hover, #restart-btn:hover {
+    /*background-color: #000;*/
+    color: #fff;
+    font-size: 1.5rem;
+}
+
 /*quiz.html specific styling */
 /*question area */
 
