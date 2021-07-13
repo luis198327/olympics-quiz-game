@@ -153,3 +153,7 @@ body {
     align-items: center;
     flex-direction: column;
 }
+
+.results-area h3 {
+    font-size: 1.5rem;
+}
