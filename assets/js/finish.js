@@ -26,4 +26,4 @@ if(currentScore >= 9) {
     body.style.backgroundRepeat = "no-repeat";
     body.style.backgroundSize = "contain";
     medal.innerHTML = "Unlucky. You have won a Bronze medal!!!";
-};
+}
