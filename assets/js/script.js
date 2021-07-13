@@ -205,7 +205,7 @@ function newQuestion() {
     }
     //Remove question from unused questions
     unusedQuestions.splice(questionLibIndex, 1);
-};
+}
 
 //checks which answer is selected via click event listener
 for (answer of answers) {
@@ -223,7 +223,7 @@ for (answer of answers) {
         //checks if correct and then increases score by 1
         if(correctIncorrect === "correct") {
             scoreBoard(1);
-        };
+        }
 
         //function to remove the previous class and move to new question after two seconds
         setTimeout(function(){ 
@@ -233,7 +233,7 @@ for (answer of answers) {
 
               
         });
-    };
+    }
           
     /**
      * Function to update score
@@ -241,6 +241,6 @@ for (answer of answers) {
      function scoreBoard(total) {
         score +=total;
         scoreTotal.innerHTML = score;
-    };
+    }
 
     playGame();
