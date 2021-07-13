@@ -12,4 +12,14 @@ let body = document.getElementsByTagName('body')[0];
         body.style.backgroundImage = 'url("../assets/images/medal-1.jpg")';
         body.style.backgroundRepeat = "no-repeat";
         body.style.backgroundSize = "contain";
+        
+    }else if (currentScore >= 6) { 
+        body.style.backgroundImage = 'url("../assets/images/medal-2.jpg")';
+        body.style.backgroundRepeat = "no-repeat";
+        body.style.backgroundSize = "contain";
+    
+    }   else {
+        body.style.backgroundImage = 'url("../assets/images/medal-3.jpg")';
+        body.style.backgroundRepeat = "no-repeat";
+        body.style.backgroundSize = "contain";
     };
