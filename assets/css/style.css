@@ -157,3 +157,13 @@ body {
 .results-area h3 {
     font-size: 1.5rem;
 }
+
+#final {
+    border: 0.1rem black solid;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0.5rem;
+}
