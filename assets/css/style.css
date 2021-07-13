@@ -82,6 +82,7 @@ body {
 .selection {
     display: flex;
 }
+
 .selection > h3 {
     flex-direction: row;
     border: 0.1rem black solid;
@@ -95,10 +96,18 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .answer {
     width: 55vw;
     height: auto;
-    background-color: rgba(255, 255, 255, 0.9);
+    /* "to left" / "to right" - affects initial color */
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.9) 50%, #FFD700 50%) right;
+    background-size: 200%;
+    transition: .2s ease-out;
+}
+
+.answer:hover {
+    background-position: left;
 }
 
 .game-area > h3 {
@@ -140,6 +149,7 @@ body {
 .incorrect {
     background: #ff0033;
 }
+
 .incorrect::after {
     content: '\274C'; /*unicode symbol for a cross */
     color: #ff0033;
