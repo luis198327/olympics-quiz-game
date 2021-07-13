@@ -193,3 +193,67 @@ body {
     margin: 0 auto;
     padding: 0.5rem;
 }
+
+
+/* Media Query */
+
+/* For screen sizes from 940px down */
+@media screen and (max-width: 940px) {
+    .game-area {
+        height: 95vh;
+        width: 95vw;
+        justify-content: center;
+    }
+    
+    #question-no {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* For screen sizes from 800px down */
+@media screen and (max-width: 800px) {
+    .container {
+        background-position: 70% 30%;
+        background-size: cover;
+    }
+}
+
+/* For screen sizes from 500px down */
+@media screen and (max-width: 500px) {
+    .game-area {
+        height: 95vh;
+        width: 95vw;
+    }
+
+    html { 
+        font-size: 0.8rem;
+    }
+
+    #question-no {
+        margin-bottom: 1.2rem;
+    }
+
+    #question  {
+        margin-bottom: 1.2rem;
+    }
+
+    #score-board {
+        margin-top: 1.2rem;
+    }
+}
+
+/* For screen sizes from 405px down */
+@media screen and (max-width: 405px) {
+    
+    html { 
+        font-size: 0.7rem;
+    }
+
+    #question-no {
+        margin-bottom: 1.4rem;
+    }
+
+    #question  {
+        margin-bottom: 1.4rem;
+    }
+}
