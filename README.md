@@ -175,8 +175,7 @@ Or simply clone this repository directly into the editor of your choice by pasti
 + All content was written by the developer, unless referenced below.
 
 ### Code
-
-<<update section + W3School - To produce a responsive navigational bar, W3Schools was used and code/script added to the HTML page to produce this.  This has then been tweaked accordingly to style for this project.>>
++ [stack overflow](https://stackoverflow.com/questions/17212094/fill-background-color-left-to-right-css) - used to obtain initial code which i then tweaked to provide a hover effect when selecting an answer.
 
 ### Media
 + [rawpixel](https://www.rawpixel.com/) - used to obtain welcome image of tokyo background.
