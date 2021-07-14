@@ -130,7 +130,7 @@ Additional features that I would like to include in a future release would be to
 <<Add content>>
 
 ### Further Testing
- <<Add content>
+ + When testing different scores on the finish page, I noticed the image and corresponding message were not consistent when a score of zero was awarded.  The Bronze medal was shown but the message stated was the user won Gold.  I have therefore expanded the if else statement to add a further 2 conditions.  The first was so that if the score equals zero, a new false start image and message is displayed.  Anything else should result in a 404 error message to presented.
 
 #### Validation
 I used the W3C Markup Validation Service to check the Markup and W3C CSS Validation Service to check the CSS validity of the site.  I also used JShint to check the functionality of my JavaScript code.  I used these during and at the end of the project to regularly identify issues.  <<Update when tested - All HTML pages, and the CSS styling page and javascript have passed with no errors/issues highlighted.>>
