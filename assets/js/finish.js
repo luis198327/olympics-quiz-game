@@ -9,21 +9,34 @@ let medal = document.getElementById('medal');
 /**
  * function to change background image based on score
  */
-if(currentScore >= 9) {
+ if(currentScore >= 9) {
     body.style.backgroundImage = 'url("../assets/images/medal-1.jpg")';
     body.style.backgroundRepeat = "no-repeat";
-    body.style.backgroundSize = "contain";
+    body.style.backgroundPosition = "50% 90%";
+    body.style.backgroundSize = "10rem 20rem";
     medal.innerHTML = "Congratulations. You have won Gold!!!";
 
 } else if (currentScore >= 6) { 
     body.style.backgroundImage = 'url("../assets/images/medal-2.jpg")';
     body.style.backgroundRepeat = "no-repeat";
-    body.style.backgroundSize = "contain";
+    body.style.backgroundPosition = "50% 90%";
+    body.style.backgroundSize = "10rem 20rem";
     medal.innerHTML = "You have won Silver!!!";
 
-} else {
+} else if (currentScore >= 1) {
     body.style.backgroundImage = 'url("../assets/images/medal-3.jpg")';
     body.style.backgroundRepeat = "no-repeat";
-    body.style.backgroundSize = "contain";
+    body.style.backgroundPosition = "50% 90%";
+    body.style.backgroundSize = "10rem 20rem";
     medal.innerHTML = "Unlucky. You have won a Bronze medal!!!";
+
+} else if (currentScore == 0) {
+    body.style.backgroundImage = 'url("../assets/images/false-start.jpg")';
+    body.style.backgroundRepeat = "no-repeat";
+    body.style.backgroundPosition = "50% 90%";
+    body.style.backgroundSize = "30rem 15rem";
+    medal.innerHTML = "False Start!!! Try again!!!";
+
+} else {
+    body.style.backgroundImage = 'url("../assets/images/medal-3.jpg")';//need to insert a 404 error message
 }
