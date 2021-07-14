@@ -180,7 +180,8 @@ Or simply clone this repository directly into the editor of your choice by pasti
 ### Media
 + [rawpixel](https://www.rawpixel.com/) - used to obtain welcome image of tokyo background.
 + [pinterest](https://www.pinterest.co.uk/) - used to obtain the olympic rings and feathers image on the home page.
-+ [free images](https://www.freeimages.com/) - used to obtail the images of the 3 medals used on the results/finish page.
++ [free images](https://www.freeimages.com/) - used to obtain the images of the 3 medals used on the results/finish page.
++ [sports matik](https://sportsmatik.com/sports-corner/sports-technology/starter-pistol) - used to obtain the false start image on the results/finish page for when a score equlas zero 0.
 
 ### Resources
 I used the following resources to obtain ideas for the questions within the quiz:
