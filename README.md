@@ -140,7 +140,7 @@ Additional features that I would like to include in a future release would be to
  + When testing the quiz functionality, it became clear that there was the ability to click multiple times on one question, and it would then race through and answer the remaining questions unintentionally, which is bad UX. I was going to reduce the timer that moves on to the next quesiton and add this as a bug, but resolved the issue.  I added a variable and if statement to accept an answer at a certain time and then to prevent once an answer has been selected. 
 
 #### Validation
-I used the W3C Markup Validation Service to check the Markup and W3C CSS Validation Service to check the CSS validity of the site.  I also used JShint to check the functionality of my JavaScript code.  I used these during and at the end of the project to regularly identify issues.  <<Update when tested - All HTML pages, and the CSS styling page and javascript have passed with no errors/issues highlighted.>>
+I used the W3C Markup Validation Service to check the Markup and W3C CSS Validation Service to check the CSS validity of the site.  I also used JSHint to check the functionality of my JavaScript code.  I used these during and at the end of the project to regularly identify issues.  <<Update when tested - All HTML pages, and the CSS styling page and javascript have passed with no errors/issues highlighted.>>
 
 <<Add screen shots of the code passing the validation sites>>
 
