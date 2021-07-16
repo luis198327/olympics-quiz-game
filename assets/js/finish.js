@@ -30,13 +30,14 @@ let medal = document.getElementById('medal');
     body.style.backgroundSize = "10rem 20rem";
     medal.innerHTML = "Unlucky. You have won a Bronze medal!!!";
 
-} else if (currentScore == 0) {
+} /*else if (currentScore == 0) {
     body.style.backgroundImage = 'url("../assets/images/false-start.jpg")';
     body.style.backgroundRepeat = "no-repeat";
     body.style.backgroundPosition = "50% 90%";
     body.style.backgroundSize = "30rem 15rem";
     medal.innerHTML = "False Start!!! Try again!!!";
 
-} else {
-    body.style.backgroundImage = 'url("../assets/images/medal-3.jpg")';//need to insert a 404 error message
-}
+}*/ else {
+    return window.location.assign("/error.html");
+    }
+
