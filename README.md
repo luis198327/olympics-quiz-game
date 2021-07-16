@@ -106,10 +106,11 @@ Additional features that I would like to include in a future release would be to
 + Google Images - used to search for images for website including olympic rings and hero image.  Details can be found under the Credits section.
 + [Icons8](https://icons8.com/) - used to import the favicon olympic ring icon image.
 + [Favicon](https://favicon.io/) - used to convert the image from Icon8 into an ico file.
-+ [W3Schools](https://www.w3schools.com/) - used to refer to as additional support and to insert code into my webpage.  The code used is referenced in the Code section below. 
++ [W3Schools](https://www.w3schools.com/) - used to refer to as additional support and to get ideas for how to use code in my webpage. 
++ [stack overflow](https://stackoverflow.com/questions/17212094/fill-background-color-left-to-right-css) - code used specified on code section below to assist with hover over effect on answers.
 + [W3C HTML Validation Service](https://validator.w3.org/#validate_by_input) - used to check the markup validity of Web documents in HTML.
 + [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input) - used to check the validity of my CSS in the project.
-+ [JShint](https://jshint.com/) - used to check the validity of my JavaScript code in my project.
++ [JSHint](https://jshint.com/) - used to check the validity of my JavaScript code in my project.
 + [Python Tutor](http://www.pythontutor.com/) - used to check my JavaScript code in the project. 
 + [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) - used to test site, check console logs and run Lighthouse reports.
 + [TinyPNG](https://tinypng.com/) - used to compress my images so that they reduce file size and load faster within the site.
@@ -189,7 +190,7 @@ Or simply clone this repository directly into the editor of your choice by pasti
 + [rawpixel](https://www.rawpixel.com/) - used to obtain welcome image of tokyo background.
 + [pinterest](https://www.pinterest.co.uk/) - used to obtain the olympic rings and feathers image on the home page.
 + [free images](https://www.freeimages.com/) - used to obtain the images of the 3 medals used on the results/finish page.
-+ [sports matik](https://sportsmatik.com/sports-corner/sports-technology/starter-pistol) - used to obtain the false start image on the results/finish page for when a score equlas zero 0.
++ [sports matik](https://sportsmatik.com/sports-corner/sports-technology/starter-pistol) - used to obtain the false start image on the results/finish page for when a score equals zero 0.
 
 ### Resources
 I used the following resources to obtain ideas for the questions within the quiz:

@@ -190,7 +190,7 @@ function newQuestion() {
         // When games reaches the 10 question limit, the page will load the finish page
         if (questionNumber >= questionMaximum) {
             localStorage.setItem("currentScore", score);
-              return window.location.assign("/finish.html");
+              return window.location.assign("finish.html");
         }
 
     questionNumber++;  //increments question number
