@@ -137,6 +137,8 @@ Additional features that I would like to include in a future release would be to
 ### Further Testing
  + When testing different scores on the finish page, I noticed the image and corresponding message were not consistent when a score of zero was awarded.  The Bronze medal was shown but the message stated was the user won Gold.  I have therefore expanded the if else statement to add a further 2 conditions.  The first was so that if the score equals zero, a new false start image and message is displayed.  Anything else should result in a 404 error message to presented, which is styled to look like the Japanese flag (the zero being a red circle).
 
+ + When testing the quiz functionality, it became clear that there was the ability to click multiple times on one question, and it would then race through and answer the remaining questions unintentionally, which is bad UX. I was going to reduce the timer that moves on to the next quesiton and add this as a bug, but resolved the issue.  I added a variable and if statement to accept an answer at a certain time and then to prevent once an answer has been selected. 
+
 #### Validation
 I used the W3C Markup Validation Service to check the Markup and W3C CSS Validation Service to check the CSS validity of the site.  I also used JShint to check the functionality of my JavaScript code.  I used these during and at the end of the project to regularly identify issues.  <<Update when tested - All HTML pages, and the CSS styling page and javascript have passed with no errors/issues highlighted.>>
 
@@ -144,7 +146,8 @@ I used the W3C Markup Validation Service to check the Markup and W3C CSS Validat
 
 #### Issues I Overcome
 + I was having trouble with the if else statement under the finish.html page to correctly show the message and medal image. I manage to overcome this by expanding the if else statement and setting the operator to AND (&&) symbols.  I was using >= signs which was causing the code to behave not as intended should the score go beyond 10 in error.  A 404 error message has also been embeded just in case to prevent issues and a bad UX. 
-<<Add content or delete section>>
+
++ When i entered the extra bit of code as mentioned in the further testing section for accepting answers, it wasn't pulling the question and answers from the question library. I copied the code into JSHint and discovered a quotation mark was added in error, which was not obvioudly seen for some reason in GitPod. This corrected the code and the question and answers appear from the library ok.
 
 ### Known Bugs/Improvements   
 + I would like to have provided an image or message to confirm if the answer was correct or incorrect.  I tried to insert a div using JavaScript to provide a correct or incorrect message, but couldn't quite get the code to provide the correct user feedback. Was only applying to one class type.  As a temporary fix, i used CSS to style an after pseudo class to insert a tick or cross to provide additional user feedback.
