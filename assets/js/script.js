@@ -6,6 +6,7 @@ const scoreTotal = document.getElementById("score");
 let currentQuestion = {}; //current question
 let score = 0; //score counter
 let questionNumber = 0; //question number quiz is on
+let areWeAcceptingAnswers = false;  //to be used in function to prevent multiple answers given
 let unusedQuestions = []; //will obtain a new question for user
 let questionLibrary = [ //questions are stored here
         {
@@ -203,21 +204,24 @@ function newQuestion() {
         const number = answer.dataset['answer'];
         answer.innerHTML = currentQuestion['answer' + number];
     }
-    //Remove question from unused questions
+    //Remove question from unused questions & check if we are accepting answer
     unusedQuestions.splice(questionLibIndex, 1);
+    areWeAcceptingAnswers = true;
 }
 
-//checks which answer is selected via click event listener
-for (answer of answers) {
+//checks which answer is selected via click event listener and prevent user from selecting answer
+for (let answer of answers) {
     answer.addEventListener('click', function(event){
-        answer['answer'];
-        
+
+        if(!areWeAcceptingAnswers) return;
+        areWeAcceptingAnswers = false;
+ 
         const selectedChoice = event.target;
         const selectedAnswer = selectedChoice.dataset['answer'];
 
         //determines if the correct answer has been selected or not
         const correctIncorrect = 
-        selectedAnswer == currentQuestion.correct ? "correct" : "incorrect";
+        selectedAnswer === currentQuestion.correct ? "correct" : "incorrect";
         selectedChoice.parentElement.classList.add(correctIncorrect);
         
         //checks if correct and then increases score by 1
