@@ -156,7 +156,8 @@ body {
 
 .incorrect::after {
     content: '\274C'; /*unicode symbol for a cross */
-    color: #ff0033;
+    color: #000;
+    background-color: #ff0033;
     display: flex;
     justify-content: center;
     align-items: center;
