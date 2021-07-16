@@ -38,8 +38,10 @@ The second page will form the structure of the quiz itself and the use of JavaSc
 
 Once the game quesiton limit has been reached, it will display the users score, and the ability to restart the quiz, taking you back to the home page.
 
+Following feedback on my MS1 project, I have also embeded a 404 error message in the event that the scoring doesnt work or correctly calculates.
+
 ### Skeleton
-I used wireframes to put together a very basic mock-up of the site based on a desktop/tablet and mobile devices. This did develop during the project as my understanding of JavaScript progressed.  I was going to keep it to 2 html pages, but found it easier to creare a third page for the results page separately.
+I used wireframes to put together a very basic mock-up of the site based on a desktop/tablet and mobile devices. This did develop during the project as my understanding of JavaScript progressed.  I was going to keep it to 2 html pages, but found it easier to creare a third page for the results page separately. A fourth page has also been added (404 error), but this should not be visible providing the code works fine. 
 
 The wireframe can be found <<insert wireframe>>.
 
@@ -71,6 +73,8 @@ There will a score tracking system so the user knows how many questions have bee
 Once the quiz has been completed, a results page will load showing the score.
 
 There will be the option to restart the quiz to attempt a better score.
+
+Should the calculation of the score not be correct (either over 10 or below zero), a 404 error page will display. This will contain a message to confirm unable to display the page correctly and a link to go back to the home page to restart.  The background will be white with the zero of the 404 being red to try and replicate the Japanese flag.
 
 <<provide screen shots of the site>>
 
@@ -112,6 +116,7 @@ Additional features that I would like to include in a future release would be to
 + [istockphoto](https://www.istockphoto.com/) - used to obtain welcome image.
 + [unicode table](https://unicode-table.com/en/) - used to find the CSS unicode to allow me to insert a tick and cross symbol to provide user feedback if a correct answer is provided.
 + [free images](https://www.freeimages.com/) - used to obtain images of medals. Refer to credits section for additional details.
++ [flatuicolors](https://flatuicolors.com/palette/gb) - used to obtain colours on 404 error page
 
 ## Testing
 ### Testing User Stories From User Experience (UX) Section
@@ -130,7 +135,7 @@ Additional features that I would like to include in a future release would be to
 <<Add content>>
 
 ### Further Testing
- + When testing different scores on the finish page, I noticed the image and corresponding message were not consistent when a score of zero was awarded.  The Bronze medal was shown but the message stated was the user won Gold.  I have therefore expanded the if else statement to add a further 2 conditions.  The first was so that if the score equals zero, a new false start image and message is displayed.  Anything else should result in a 404 error message to presented.
+ + When testing different scores on the finish page, I noticed the image and corresponding message were not consistent when a score of zero was awarded.  The Bronze medal was shown but the message stated was the user won Gold.  I have therefore expanded the if else statement to add a further 2 conditions.  The first was so that if the score equals zero, a new false start image and message is displayed.  Anything else should result in a 404 error message to presented, which is styled to look like the Japanese flag (the zero being a red circle).
 
 #### Validation
 I used the W3C Markup Validation Service to check the Markup and W3C CSS Validation Service to check the CSS validity of the site.  I also used JShint to check the functionality of my JavaScript code.  I used these during and at the end of the project to regularly identify issues.  <<Update when tested - All HTML pages, and the CSS styling page and javascript have passed with no errors/issues highlighted.>>
@@ -138,7 +143,7 @@ I used the W3C Markup Validation Service to check the Markup and W3C CSS Validat
 <<Add screen shots of the code passing the validation sites>>
 
 #### Issues I Overcome
-
++ I was having trouble with the if else statement under the finish.html page to correctly show the message and medal image. I manage to overcome this by expanding the if else statement and setting the operator to AND (&&) symbols.  I was using >= signs which was causing the code to behave not as intended should the score go beyond 10 in error.  A 404 error message has also been embeded just in case to prevent issues and a bad UX. 
 <<Add content or delete section>>
 
 ### Known Bugs/Improvements   
