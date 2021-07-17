@@ -124,7 +124,7 @@ Additional features that I would like to include in a future release would be to
 + [istockphoto](https://www.istockphoto.com/) - used to obtain welcome image.
 + [unicode table](https://unicode-table.com/en/) - used to find the CSS unicode to allow me to insert a tick and cross symbol to provide user feedback if a correct answer is provided.
 + [free images](https://www.freeimages.com/) - used to obtain images of medals. Refer to credits section for additional details.
-+ [flatuicolors](https://flatuicolors.com/palette/gb) - used to obtain colours on 404 error page
++ [flatuicolors](https://flatuicolors.com/palette/gb) - used to obtain colours on 404 error page.
 
 ## Testing
 ### Testing User Stories From User Experience (UX) Section
@@ -205,6 +205,7 @@ Or simply clone this repository directly into the editor of your choice by pasti
 ### Code
 + [stack overflow](https://stackoverflow.com/questions/17212094/fill-background-color-left-to-right-css) - used to obtain initial code which i then tweaked to provide a hover effect when selecting an answer.
 + I used code from W3Schools to create the hover over menu/nav and adapted this to the styling, positioning, wording for my quiz game.  The menu is situated in the top left of each of the 3 main HTML pages.
++ [code box](https://code-boxx.com/lock-screen-orientation/) - used CSS media code to restrict landscape view being used on smaller devices - in other words to display a message to rotate back to portrait mode. I have adapted the code so that it is using min-height instead, so it seems to allow use for bigger devices like tablets not matter if its portrait or landscape mode.
 
 ### Media
 + [rawpixel](https://www.rawpixel.com/) - used to obtain welcome image of tokyo background.
