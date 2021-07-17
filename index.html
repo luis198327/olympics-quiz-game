@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,8 +12,23 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Olympic Quiz</title>
 </head>
+
 <body>
+    <!--Container used for main page area and background image-->
     <div class="container">
+        <!--Dropdown menu nav bar - code structure taken from W3Schools-->
+        <div class="dropdown">
+            <button class="dropbtn">MENU</button>
+            <div class="dropdown-content">
+                <a href="index.html" aria-label="Go back to home page to restart quiz">Home</a>
+                <a href="https://en.wikipedia.org/wiki/2020_Summer_Olympics" target="_blank" rel="noopener noreferrer"
+                    aria-label="Go to Summer Olympics 2020 wikipedia page (opens in new tab)">Tokyo 2020 Wikipedia
+                    page</a>
+                <a href="https://olympics.com/tokyo-2020/en/" target="_blank" rel="noopener noreferrer"
+                    aria-label="Go to Tokyo 2020 official page (opens in new tab)">Tokyo 2020 Official page</a>
+            </div>
+        </div>
+        <!--Game area-->
         <div id="welcome" class="game-area">
             <h1>Welcome to the Olympic<br>Games 2021 quiz game.</h1>
             <img src="assets/images/olympic-rings.png" alt="olympic-rings">
@@ -22,4 +38,5 @@
 
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
