@@ -38,9 +38,9 @@ The second page will form the structure of the quiz itself and the use of JavaSc
 
 Once the game quesiton limit has been reached, it will display the users score, and the ability to restart the quiz, taking you back to the home page.
 
-Following feedback on my MS1 project, I have also embeded a 404 error message in the event that the scoring doesnt work or correctly calculates.  There will be a button to restart the quiz by navigating home.
+Following feedback on my MS1 project, I have also embeded a 404 error message in the event that the scoring doesnt work or correctly calculates.
 
-All pages except the 404 error page will also have a dropdown menu option (a late change).  This will give the user a few options to restart or find help.
+A dropdown menu (late change) has also been created and is situated on the 3 main HTML pages to provide better UX and give the user the abilty to restart the quiz or find external resources should they wish to learn or even cheat!
 
 ### Skeleton
 I used wireframes to put together a very basic mock-up of the site based on a desktop/tablet and mobile devices. This did develop during the project as my understanding of JavaScript progressed.  I was going to keep it to 2 html pages, but found it easier to creare a third page for the results page separately. A fourth page has also been added (404 error), but this should not be visible providing the code works fine. 
