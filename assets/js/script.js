@@ -172,6 +172,7 @@ let questionLibrary = [ //questions are stored here
     ];
 
 const questionMaximum = 10; //number of questions quiz will ask
+screen.orientation.lock(portrait);
 
 /**
  * New game
