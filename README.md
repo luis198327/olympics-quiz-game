@@ -38,10 +38,14 @@ The second page will form the structure of the quiz itself and the use of JavaSc
 
 Once the game quesiton limit has been reached, it will display the users score, and the ability to restart the quiz, taking you back to the home page.
 
-Following feedback on my MS1 project, I have also embeded a 404 error message in the event that the scoring doesnt work or correctly calculates.
+Following feedback on my MS1 project, I have also embeded a 404 error message in the event that the scoring doesnt work or correctly calculates.  There will be a button to restart the quiz by navigating home.
+
+All pages except the 404 error page will also have a dropdown menu option (a late change).  This will give the user a few options to restart or find help.
 
 ### Skeleton
 I used wireframes to put together a very basic mock-up of the site based on a desktop/tablet and mobile devices. This did develop during the project as my understanding of JavaScript progressed.  I was going to keep it to 2 html pages, but found it easier to creare a third page for the results page separately. A fourth page has also been added (404 error), but this should not be visible providing the code works fine. 
+
+The wireframe also does not show a late change made which was to include a dropdown menu.  This was always in my thoughts but wasnt sure if this would be effective or appropriate, but adds a nice touch.
 
 The wireframe can be found <<insert wireframe>>.
 
@@ -60,6 +64,7 @@ The wireframe can be found <<insert wireframe>>.
 + A background image of Japan will be used across both HTML pages. This will provide site consistency. A light grey see through box will denote the gaming area.
 + The site will use appropriate images where applicable to provide user feedback on certain questions.
 + The favicon used is the Olympic rings.
++ Medals (imagery) will be given at the end of the quiz subject to the score awarded, or a false start gun will be shown should the user score zero.
 
 ## Features
 The site features 3 HTML pages.  The main page will load with a welcome message on page landing.  It will provide a play button to start the quiz.  
@@ -75,6 +80,8 @@ Once the quiz has been completed, a results page will load showing the score.
 There will be the option to restart the quiz to attempt a better score.
 
 Should the calculation of the score not be correct (either over 10 or below zero), a 404 error page will display. This will contain a message to confirm unable to display the page correctly and a link to go back to the home page to restart.  The background will be white with the zero of the 404 being red to try and replicate the Japanese flag.
+
+I have also implemented a late change to provide a menu option which will allow a user to restart the quiz should they wish to during the current game.  There will also be links to sites so they can learn about the Tokyo games, and even find the answers should they wish to cheat.
 
 <<provide screen shots of the site>>
 
@@ -187,6 +194,7 @@ Or simply clone this repository directly into the editor of your choice by pasti
 
 ### Code
 + [stack overflow](https://stackoverflow.com/questions/17212094/fill-background-color-left-to-right-css) - used to obtain initial code which i then tweaked to provide a hover effect when selecting an answer.
++ I used code from W3Schools to create the hover over menu/nav and adapted this to the styling, positioning, wording for my quiz game.  The menu is situated in the top left of each of the 3 main HTML pages.
 
 ### Media
 + [rawpixel](https://www.rawpixel.com/) - used to obtain welcome image of tokyo background.
