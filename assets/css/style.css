@@ -293,6 +293,25 @@ body {
 }
 /* Media Query */
 
+/* To prevent rotating on landscape view on mobile/tablet devices */
+@media only screen and (orientation:landscape) {
+    #turn { 
+        display: block; 
+    }
+    #container {
+        display: none;
+    }
+}
+
+@media only screen and (orientation:portrait) {
+    #turn { 
+        display: none; 
+    }
+    #container{ 
+        display: block; 
+    }
+}
+
 /* For screen sizes from 1000px down */
 @media screen and (max-width: 1000px) {
     html { 
