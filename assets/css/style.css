@@ -280,11 +280,12 @@ body {
 
 .error-page a {
     text-decoration: none;
-    background-color: #e84118;
+    background-color: #AE0909;
     color: #fff;
     padding: 0.5rem 1rem;
     border-radius: 1rem;
     text-transform: uppercase;
+    margin-top: 2rem;
 }
 
 .error-page a:hover {
