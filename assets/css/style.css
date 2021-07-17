@@ -308,20 +308,24 @@ i {
 }
 /* Media Query */
 
-/* To prevent rotating on landscape view on mobile/tablet devices */
-@media only screen and (orientation:landscape) {
-    #turn-screen { 
-        display: block; 
-    }
-    .container {
-        display: none;
-    }
-}
-
-@media only screen and (orientation:portrait) {
+/* To prevent rotating on landscape view on smaller mobile devices */
+@media screen and (min-height: 420px)  {
     #turn-screen { 
         display: none; 
     }  
+    .container {
+        display: flex;
+    }
+}
+
+@media screen and (max-height: 420px) {
+    #turn-screen { 
+        display: block; 
+    }
+
+    .container {
+        display: none;
+    }
 }
 
 /* For screen sizes from 1000px down */
@@ -329,6 +333,7 @@ i {
     html { 
         font-size: 0.8rem;
     }
+
     .game-area {
         height: 80vh;
         width: 95vw;
