@@ -6,6 +6,21 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+/*Styling for when message displays on landscape view */
+#turn-screen > p {
+    font-size: 2rem;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+i {
+    margin-left: 0.8rem;
+}
+
 /* Background image of japan - used on index.html and quiz.html pages */
 .container {
     background: url(../images/tokyo-background.jpg) center center no-repeat;
@@ -295,21 +310,18 @@ body {
 
 /* To prevent rotating on landscape view on mobile/tablet devices */
 @media only screen and (orientation:landscape) {
-    #turn { 
+    #turn-screen { 
         display: block; 
     }
-    #container {
+    .container {
         display: none;
     }
 }
 
 @media only screen and (orientation:portrait) {
-    #turn { 
+    #turn-screen { 
         display: none; 
-    }
-    #container{ 
-        display: block; 
-    }
+    }  
 }
 
 /* For screen sizes from 1000px down */
