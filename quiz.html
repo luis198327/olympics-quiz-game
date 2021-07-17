@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,11 +12,25 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Start Quiz</title>
 </head>
+
 <body>
+    <!--Container used for main page area and background image-->
     <div class="container">
+        <!--Dropdown menu nav bar - code structure taken from W3Schools-->
+        <div class="dropdown">
+            <button class="dropbtn">MENU</button>
+            <div class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="https://en.wikipedia.org/wiki/2020_Summer_Olympics" target="_blank"
+                    rel="noopener noreferrer">Tokyo 2020 Wikipedia page</a>
+                <a href="https://olympics.com/tokyo-2020/en/" target="_blank" rel="noopener noreferrer">Tokyo 2020
+                    Official page</a>
+            </div>
+        </div>
+        <!--Game area-->
         <div class="game-area">
-        <h2 id="question-no">Question:   <span id="question-no-display">1/10</span></h2>
-        <h2 id="question">What is the answer to this question?</h2>
+            <h2 id="question-no">Question: <span id="question-no-display">1/10</span></h2>
+            <h2 id="question">What is the answer to this question?</h2>
             <div class="selection">
                 <h3 class="abcd">A</h3>
                 <h3 class="answer" data-answer="1">Answer1</h3>
@@ -32,7 +47,7 @@
                 <h3 class="abcd">D</h3>
                 <h3 class="answer" data-answer="4">Answer4</h3>
             </div>
-            <h3 id="score-board">Your current score is:  <span id="score">0</span></h3>
+            <h3 id="score-board">Your current score is: <span id="score">0</span></h3>
         </div>
     </div>
 
@@ -40,4 +55,5 @@
     <!--Font awesome script-->
     <script src="https://kit.fontawesome.com/e89da3dc48.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -1,28 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="stylesheet" href="assets/css/style.css">
 
     <title>Finish</title>
 </head>
+
 <body>
-    
+    <!--Dropdown menu nav bar - code structure taken from W3Schools-->
+    <div class="dropdown">
+        <button class="dropbtn">MENU</button>
+        <div class="dropdown-content">
+            <a href="index.html">Home</a>
+            <a href="https://en.wikipedia.org/wiki/2020_Summer_Olympics" target="_blank" rel="noopener noreferrer">Tokyo
+                2020 Wikipedia page</a>
+            <a href="https://olympics.com/tokyo-2020/en/" target="_blank" rel="noopener noreferrer">Tokyo 2020 Official
+                page</a>
+        </div>
+    </div>
+    <!--Results area-->
     <div class="results-area">
-        <h3>Final Score  <i class="fas fa-medal"></i></h3>
+        <h3>Final Score <i class="fas fa-medal"></i></h3>
         <h3 id="final">0</h3>
         <h3 id="medal">You have won Gold!!!</h3>
         <br>
         <a id="restart-btn" href="index.html">RESTART</a>
-    
     </div>
 
-<script src="assets/js/script.js"></script>
-<script src="assets/js/finish.js"></script>
-<!--Font awesome script-->
-<script src="https://kit.fontawesome.com/e89da3dc48.js" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/finish.js"></script>
+    <!--Font awesome script-->
+    <script src="https://kit.fontawesome.com/e89da3dc48.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
