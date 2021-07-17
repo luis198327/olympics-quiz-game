@@ -6,7 +6,7 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-/* Background image of japan*/
+/* Background image of japan - used on index.html and quiz.html pages */
 .container {
     background: url(../images/tokyo-background.jpg) center center no-repeat;
     background-size: cover;
@@ -17,7 +17,52 @@ body {
     align-items: center;
 }
 
-/* Gaming area */
+/* NAV BAR - used on all pages*/
+.dropbtn {
+    background-color: rgb(86, 165, 235);
+    color: #000;
+    font-weight: 600;
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+}
+
+.dropdown {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+}  
+  
+.dropdown-content {
+    display: none;
+    background-color: rgb(86, 165, 235);
+    font-weight: 600;
+    min-width: 6rem;
+    overflow: auto; 
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 0.5rem 0.5rem;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {
+    background-color: rgb(86, 195, 235);
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+.dropdown:hover .dropbtn {
+    color: #fff;
+}
+
+/* Gaming area - used on index.html and quiz.html pages*/
 .game-area {
     height: 85vh;
     width: 75vw;
