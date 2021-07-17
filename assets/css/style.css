@@ -64,7 +64,7 @@ body {
 
 /* Gaming area - used on index.html and quiz.html pages*/
 .game-area {
-    height: 85vh;
+    height: 95vh;
     width: 75vw;
     background-color: rgba(223, 223, 216, 0.4);
     color: #282824;
@@ -293,10 +293,13 @@ body {
 }
 /* Media Query */
 
-/* For screen sizes from 940px down */
-@media screen and (max-width: 940px) {
+/* For screen sizes from 1000px down */
+@media screen and (max-width: 1000px) {
+    html { 
+        font-size: 0.8rem;
+    }
     .game-area {
-        height: 95vh;
+        height: 80vh;
         width: 95vw;
         justify-content: center;
     }
@@ -314,15 +317,10 @@ body {
     }
 }
 
-/* For screen sizes from 500px down */
-@media screen and (max-width: 500px) {
-    .game-area {
-        height: 95vh;
-        width: 95vw;
-    }
-
+/* For screen sizes from 640px down */
+@media screen and (max-width: 640px) {
     html { 
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
     #question-no {
@@ -338,11 +336,10 @@ body {
     }
 }
 
-/* For screen sizes from 405px down */
-@media screen and (max-width: 405px) {
-    
+/* For screen sizes from 440px down */
+@media screen and (max-width: 440px) {
     html { 
-        font-size: 0.7rem;
+        font-size: 0.65rem;
     }
 
     #question-no {
@@ -351,5 +348,12 @@ body {
 
     #question  {
         margin-bottom: 1.4rem;
+    }
+}
+
+/* For screen sizes from 340px down */
+@media screen and (max-width: 340px) {
+    html { 
+        font-size: 0.60rem;
     }
 }
