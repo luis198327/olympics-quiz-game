@@ -172,19 +172,19 @@ I also referred to Google Chrome Tools and Lighthouse reports to check details w
 ### Known Bugs/Improvements   
 + I would like to have provided an image or message to confirm if the answer was correct or incorrect.  I tried to insert a div using JavaScript to provide a correct or incorrect message, but couldn't quite get the code to provide the correct user feedback. Was only applying to one class type.  As a temporary fix, i used CSS to style an after pseudo class to insert a tick or cross to provide additional user feedback.
 
-## Deployment  - review as there have been changes to GITPOD/GITHUB*****
+## Deployment
 My project was developed using the IDE, Gitpod. 
 
 The site was deployed to GitHub pages. The steps to deploy are as follows:
 
 + Within the GitHub repository, navigate to the Settings tab.
 + Then select the Pages sub-menu option on the left, which takes you to GitHub Pages. 
-+ Within the source section drop-down menu, select the Master Branch and click on save.
++ Within the source section drop-down menu, select Main (or Master Branch) and click on save.
 + Once this has been saved, the page will confirm that the site is ready to be published and provides the URL address.
 + Refreshing the page will confirm the website has been deployed, again providing the URL address.
-+ The deployed URL is <<Add deployed site URL>>
++ The deployed URL is [https://luis198327.github.io/olympics-quiz-game/](https://luis198327.github.io/olympics-quiz-game/)}
 
-The deployed site will update automatically upon new commits to the master branch. For the site to deploy correctly on GitHub pages, the landing page must be named index.html.
+The deployed site will update automatically upon new commits to the main (or master) branch. For the site to deploy correctly on GitHub pages, the landing page must be named index.html.
 
 ### Making A Local Clone
 You can clone this repository by:
@@ -193,10 +193,10 @@ You can clone this repository by:
 + This will give you the option to copy the repository using HTTPS by clicking the copy button.
 + Open Git Bash.
 + Change the current working directory to the location where you want the cloned directory to be made.
-+ Type git clone and paste the URL i.e. $ git clone https://github.com/luis198327/olympics-quiz.  <<update URL with link>>
++ Type git clone and paste the URL i.e. $ git clone https://github.com/luis198327/olympics-quiz-game.git.
 + Press Enter, and your local clone will be created.
 
-Or simply clone this repository directly into the editor of your choice by pasting $ git clone <<insert URL of live site>> into your terminal. To cut ties with this GitHub repository, type git remote rm origin into the terminal.
+Or simply clone this repository directly into the editor of your choice by pasting $ git clone https://luis198327.github.io/olympics-quiz-game/ into your terminal. To cut ties with this GitHub repository, type git remote rm origin into the terminal.
 
 ## Credits
 ### Content
@@ -213,7 +213,7 @@ Or simply clone this repository directly into the editor of your choice by pasti
 + [sports matik](https://sportsmatik.com/sports-corner/sports-technology/starter-pistol) - used to obtain the false start image on the results/finish page for when a score equals zero 0.
 
 ### Resources
-I used the following resources to obtain ideas for the questions within the quiz:
+I used the following resources to obtain ideas for the questions within the quiz, and two of these are linked within the dropdown menu of the quiz itself:
 + [Olympics main web site](https://olympics.com/tokyo-2020/en/)
 + [Google](https://www.google.com/) - used for general searching
 + [Wikipedia](https://en.wikipedia.org/wiki/2020_Summer_Olympics)
