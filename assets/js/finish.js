@@ -41,12 +41,14 @@ let medal = document.getElementById('medal');
     location.replace("404error.html");
 }
 
-/**Function to refresh page when orientation is changed */
+/**Function to refresh page when orientation is changed 
+ * Taken from stack overflow
+*/
 window.onorientationchange = function() {  	
     window.location.reload(); 
 };
 
-//Following finds the height and then resets backgroundImage to not show when 420px or below
+//Following finds the height(taken from W3Schools) and then resets backgroundImage to not show when 420px or below
 
 var h = window.outerHeight;
 let minHeight = "420";
