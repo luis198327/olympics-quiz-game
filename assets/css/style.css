@@ -313,7 +313,7 @@ i {
     #turn-screen { 
         display: none; 
     }  
-    .container {
+    .container, .container1 {
         display: flex;
     }
 }
@@ -323,7 +323,7 @@ i {
         display: block; 
     }
 
-    .container {
+    .container, .container1 {
         display: none;
     }
 }
