@@ -41,6 +41,11 @@ let medal = document.getElementById('medal');
     location.replace("404error.html");
 }
 
+/**Function to refresh page when orientation is changed */
+window.onorientationchange = function() {  	
+    window.location.reload(); 
+};
+
 //Following finds the height and then resets backgroundImage to not show when 420px or below
 
 var h = window.outerHeight;
