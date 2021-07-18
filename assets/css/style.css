@@ -330,6 +330,13 @@ i {
     }
 }
 
+/* For screen sizes from 1001px up */
+@media screen and (min-width: 1001px) {
+    .game-area {
+    height: 99vh;
+    }
+}
+
 /* For screen sizes from 1000px down */
 @media screen and (max-width: 1000px) {
     html { 
@@ -337,7 +344,7 @@ i {
     }
 
     .game-area {
-        height: 80vh;
+        height: 85vh;
         width: 95vw;
         justify-content: center;
     }
@@ -353,12 +360,16 @@ i {
         background-position: 70% 30%;
         background-size: cover;
     }
+    
+    .game-area { 
+        width: 98vw;
+    }
 }
 
-/* For screen sizes from 640px down */
-@media screen and (max-width: 640px) {
+/* For screen sizes from 740px down */
+@media screen and (max-width: 740px) {
     html { 
-        font-size: 0.7rem;
+        font-size: 0.68rem;
     }
 
     #question-no {
@@ -370,7 +381,14 @@ i {
     }
 
     #score-board {
-        margin-top: 1.2rem;
+        margin-top: 1rem;
+    }
+}
+
+/* For screen sizes from 600px down */
+@media screen and (max-width: 600px) {
+    .game-area { 
+        height: 87vh;
     }
 }
 
