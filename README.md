@@ -4,7 +4,7 @@
 
 The Code Institute project brief was to create and build an interactive front end site.  The site should respond to users' actions, allow users to engage with data, alter the way the site displays the information to achieve their preferred goals, using HTML, CSS and JavaScript while following UX industry conventions. As per the Code Institute course and methods, this was designed from a Desktop to Mobile site, so uses media queries within the CSS to have max-width break points. This project is for educational use only.
 
-<!provide link to responsive preview >
+![alt text](https://github.com/luis198327/olympics-quiz-game/blob/main/assets/images/responsive-index.JPG)
 
 ## Olympics Quiz Game [https://luis198327.github.io/olympics-quiz-game/](https://luis198327.github.io/olympics-quiz-game/) 
 The website has been created to provide a fun quiz game based on the up comming Olympic Games in Tokyo, Japan.  It is aimed at providing some general knowledge of the country and the games themselves in 2021 and past games.
@@ -43,13 +43,15 @@ Following feedback on my MS1 project, I have also embeded a 404 error message in
 A dropdown menu (late change) has also been created and is situated on the 3 main HTML pages to provide better UX and give the user the abilty to restart the quiz or find external resources should they wish to learn or even cheat!
 
 ### Skeleton
-I used wireframes to put together a very basic mock-up of the site based on a desktop/tablet and mobile devices. This did develop during the project as my understanding of JavaScript progressed.  I was going to keep it to 2 html pages, but found it easier to creare a third page for the results page separately. A fourth page has also been added (404 error), but this should not be visible providing the code works fine. 
+I used wireframes to put together a very basic mock-up of the site based on a desktop/tablet and mobile devices. This did develop during the project as my understanding of JavaScript progressed.  I was going to keep it to 2 HTML pages, but found it easier to creare a third page for the results page separately. A fourth page has also been added (404 error), but this should not be visible providing the code works fine. 
+
+Version 1 of my wireframe can be found [here](https://github.com/luis198327/olympics-quiz-game/blob/main/assets/images/wireframe-v1.pdf).
+
+A revised version was then created to incorporate the 3rd HTML page.  This revised version 2 can be found [here](https://github.com/luis198327/olympics-quiz-game/blob/main/assets/images/wireframe-v2.pdf).
 
 The wireframe also does not show two late changes. 
 + The first was to include a dropdown menu.  This was always in my thoughts but wasnt sure if this would be effective or appropriate, but adds a nice touch.
 + The second was to include a title on the quiz.html page. I felt when this was almost finalised and designed that something was missing and for better UX, I decided to add this to this page so throughout the quiz questions, the site goals are enhanced further.
-
-The wireframe can be found <<insert wireframe>>.
 
 ### Surface
 
@@ -59,8 +61,7 @@ The wireframe can be found <<insert wireframe>>.
 
 #### Colours
 + Font colour will be predominately black (unless hover over effects or JavaScript take an effect).  The font colour allows the text to stand out against the background used.
-
-<<<(may need to add context on colours for the question/answer boxes)>>>
++ Buttons will be blue backround and hover over effects will change writing to white, for the Play and Restart buttons.
 
 #### Imagery
 + A background image of Japan will be used across both HTML pages. This will provide site consistency. A light grey see through box will denote the gaming area.
@@ -71,21 +72,37 @@ The wireframe can be found <<insert wireframe>>.
 ## Features
 The site features 3 HTML pages.  The main page will load with a welcome message on page landing.  It will provide a play button to start the quiz.  
 
-The quiz will then run, by linking to the second HTML page, where the user will be asked each question in turn.  The quiz will comprise of 10 multiple questions from a library of 20 questions.
+![alt text](https://github.com/luis198327/olympics-quiz-game/blob/main/assets/images/responsive-index.JPG)
+
+The quiz will then run, by linking to the second HTML page, where the user will be asked each question in turn.  The quiz will comprise of 10 multiple questions from a library of 20 questions.  The question number will also update for the user.
+
+![alt text](https://github.com/luis198327/olympics-quiz-game/blob/main/assets/images/responsive-quiz.JPG)
+
+![alt text](https://github.com/luis198327/olympics-quiz-game/blob/main/assets/images/question-and-number.JPG)
 
 Feedback will be provided to the user if they have answered a question correctly or incorrectly.  
 
+![alt text](https://github.com/luis198327/olympics-quiz-game/blob/main/assets/images/correct-answer.JPG)
+![alt text](https://github.com/luis198327/olympics-quiz-game/blob/main/assets/images/incorrect-answer.JPG)
+
 There will a score tracking system so the user knows how many questions have been answered correctly throughout.
 
-Once the quiz has been completed, a results page will load showing the score.
+![alt text](https://github.com/luis198327/olympics-quiz-game/blob/main/assets/images/scoreboard.JPG)
 
-There will be the option to restart the quiz to attempt a better score.
+Once the quiz has been completed, a results page will load showing the score.  There will be the option to restart the quiz to attempt a better score.
+
+![alt text](https://github.com/luis198327/olympics-quiz-game/blob/main/assets/images/responsive-finish.JPG)
 
 Should the calculation of the score not be correct (either over 10 or below zero), a 404 error page will display. This will contain a message to confirm unable to display the page correctly and a link to go back to the home page to restart.  The background will be white with the zero of the 404 being red to try and replicate the Japanese flag.
 
-I have also implemented a late change to provide a menu option which will allow a user to restart the quiz should they wish to during the current game.  There will also be links to sites so they can learn about the Tokyo games, and even find the answers should they wish to cheat.
+![alt text](https://github.com/luis198327/olympics-quiz-game/blob/main/assets/images/responsive-404error.JPG)
 
-<<provide screen shots of the site>>
+I have also implemented a late change to provide a menu option which will allow a user to restart the quiz should they wish to during the current game.  There will also be links to sites so they can learn about the Tokyo games, and even find the answers should they wish to cheat.  The restart option is not shown on the index.html page.
+
+![alt text](https://github.com/luis198327/olympics-quiz-game/blob/main/assets/images/dropdownmenu.JPG)
+
+
+<<add image of rotate device>>
 
 ### Features Left To Implement
 Additional features that I would like to include in a future release would be to:
@@ -107,11 +124,7 @@ Additional features that I would like to include in a future release would be to
 + [Balsamiq](https://balsamiq.com/) - used to create the wireframes during the design process.
 + [Google fonts](https://fonts.google.com/) - used to import the 'Lato' font into the style.css file which is used on all pages throughout the project.
 + [WebAim](https://webaim.org/resources/contrastchecker/) - used to check the contrast of foreground and background text/colours to ensure they pass.
-
-<<<
 + [Font Awesome](https://fontawesome.com/) - used to import icons into my website for social media links as an example.
->>>
-
 + Google Images - used to search for images for website including olympic rings and hero image.  Details can be found under the Credits section.
 + [Icons8](https://icons8.com/) - used to import the favicon olympic ring icon image.
 + [Favicon](https://favicon.io/) - used to convert the image from Icon8 into an ico file.
@@ -154,12 +167,16 @@ Additional features that I would like to include in a future release would be to
 
  + Having added the dropdown menu as a late change to the scope, on testing this, I decided that the Restart/Home option from the dropdown content was not needed on the index.html page.  This is due to the fact that the page the user would be on is on the home/restart page. 
 
- + I didn't like how the hover effect was behaving when hovering over and selecting an answer.  On desktop/laptop devices this was working fine but when using a mobile or other touch device, the yellow background was then staying put until the next selection was chosen.  This is not great for a UX perspective.  Having to tried to correct this, the easiest way was to add a CSS media query, which would effectively remove the hover over effect for these devices.
+ + I didn't like how the hover effect was behaving when hovering over and selecting an answer.  On desktop/laptop devices this was working fine but when using a mobile or other touch device, the yellow background was then staying put until the next selection was chosen.  This is not great for a UX perspective.  Having to tried to correct this, the easiest way was to add a CSS media query, which would effectively remove the hover over effect for these devices. <<<add further comments that this shows in dev but not in prod>>>
 
 #### Validation
 I used the W3C Markup Validation Service to check the Markup and W3C CSS Validation Service to check the CSS validity of the site.  I also used JSHint to check the functionality of my JavaScript code.  I used these during and at the end of the project to regularly identify issues.  
 
 I also referred to Google Chrome Tools and Lighthouse reports to check details were ok.  This did flag a couple of issues throughout the project like contrast issues that were reported and missing meta description on finish.html page which was giving this a low SEO score.
+
+I have tested this on Google Chrome, Firefox, and Microsoft Edge browsers and no issues with the code/behaviour of the quiz were found.  I have also tested this in production using an Android mobile.  
+
+Google Chrome Dev tools have been used and the responsiveness seems to be fine on all mobile and table devices provided, and a general responsiveness check with different widths and heights also seem to fine.  I have check the screen width as low as a Galaxy Fold set at 280px wide.
 
 <<Update when tested - All HTML pages, and the CSS styling page and javascript have passed with no errors/issues highlighted.>>
 
