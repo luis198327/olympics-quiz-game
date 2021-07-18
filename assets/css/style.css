@@ -167,15 +167,16 @@ i {
 .answer {
     width: 55vw;
     height: auto;
-    /* "to left" / "to right" - affects initial color */
-    background: linear-gradient(to left, rgba(255, 255, 255, 0.9) 50%, #FFD700 50%) right;
-    background-size: 200%;
-    transition: .2s ease-out;
+    background: rgba(255, 255, 255, 0.9);
+
 }
 
-.answer:hover {
-    background-position: left;
-}
+/* Media query to remove hover over effect when not applicable */
+@media (hover: hover) {
+    .answer:hover {
+      background: #FFD700 ;
+    }
+  }
 
 .game-area > h3 {
     font-weight: bold;
