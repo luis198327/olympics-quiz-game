@@ -74,9 +74,11 @@ The site features 3 HTML pages.  The main page will load with a welcome message 
 
 ![alt text](https://github.com/luis198327/olympics-quiz-game/blob/main/assets/images/responsive-index.JPG)
 
-The quiz will then run, by linking to the second HTML page, where the user will be asked each question in turn.  The quiz will comprise of 10 multiple questions from a library of 20 questions.  The question number will also update for the user.
+The quiz will then run, by linking to the second HTML page, where the user will be asked each question in turn.  The quiz will comprise of 10 multiple questions from a library of 20 questions.
 
 ![alt text](https://github.com/luis198327/olympics-quiz-game/blob/main/assets/images/responsive-quiz.JPG)
+
+The question number will also update for the user.
 
 ![alt text](https://github.com/luis198327/olympics-quiz-game/blob/main/assets/images/question-and-number.JPG)
 
@@ -100,9 +102,6 @@ Should the calculation of the score not be correct (either over 10 or below zero
 I have also implemented a late change to provide a menu option which will allow a user to restart the quiz should they wish to during the current game.  There will also be links to sites so they can learn about the Tokyo games, and even find the answers should they wish to cheat.  The restart option is not shown on the index.html page.
 
 ![alt text](https://github.com/luis198327/olympics-quiz-game/blob/main/assets/images/dropdownmenu.JPG)
-
-
-<<add image of rotate device>>
 
 ### Features Left To Implement
 Additional features that I would like to include in a future release would be to:
@@ -185,7 +184,7 @@ Google Chrome Dev tools have been used and the responsiveness seems to be fine o
 #### Issues I Overcome
 + I was having trouble with the if else statement under the finish.html page to correctly show the message and medal image. I manage to overcome this by expanding the if else statement and setting the operator to AND (&&) symbols.  I was using >= signs which was causing the code to behave not as intended should the score go beyond 10 in error.  A 404 error message has also been embeded just in case to prevent issues and a bad UX. 
 
-+ When i entered the extra bit of code as mentioned in the further testing section for accepting answers, it wasn't pulling the question and answers from the question library. I copied the code into JSHint and discovered a quotation mark was added in error, which was not obvioudly seen for some reason in GitPod. This corrected the code and the question and answers appear from the library ok.
++ When i entered the extra bit of code as mentioned in the further testing section for accepting answers, it wasn't pulling the question and answers from the question library. I copied the code into JSHint and discovered a quotation mark was added in error, which was not obviously seen for some reason in GitPod. This corrected the code and the question and answers appear from the library ok.
 
 + For some reason, using GitPod I was unable to update my README file as it was jumping to the preview view everytime i clicked on this.  I tried to go back to a previous version, restart GitPod, restart Windows to try and reset this but for some reason this didn't work. I deleted the file and re-inserted the file and code that was previously written. Therefore hopefully this has kept and the commit messages are ok.
 
@@ -196,7 +195,9 @@ Google Chrome Dev tools have been used and the responsiveness seems to be fine o
     + I therefore found a resource using CSS and apply another media query on codebox (refer to code section). I then manipulated this code so that it works with mine, and used an image from font awesome to show the rotation symbol. 
     + This was working ok but on the finish.html and 404error.html pages this wasnt working.  This was due to there being no overall container. Therefore a new class of container1 was created and applied to the CSS styling sheet.
     + While the code was working, I then noticed a further issue. On the finish.html page subject to the final result achieved, an image would be displayed which is provided via a function in the finish.js file. When the screen goes from portrait to landscape for a smaller device, the message displayed but the image stayed put. This wasn't what I wanted to happen. I therefore researched online and using W3Schools I was able to manipulate code so that it would remove the background image when the window's outer height was reached.
-    + When further testing of this was carried out, I realised that the image was still not being removed when the device was rotated.  It would only update if i applied a hard reload of a web page and then keep that change (so either with the image showing or not even after changing the orientation). I therefore found on stack overflow a piece of code which would do this and added this to the finish.js file. Refer to the code section below. This now auto updates although you can see the image very briefly when the orientation changes.  From further research i cannot find this solution.
+    + When further testing of this was carried out, I realised that the image was still not being removed when the device was rotated.  It would only update if i applied a hard reload of a web page and then keep that change (so either with the image showing or not even after changing the orientation). I therefore found on stack overflow a piece of code which would do this and added this to the finish.js file. Refer to the code section below. This now auto updates although you can see the image very briefly when the orientation changes.  From further research i cannot find this solution.  Although following the deployment of my site, and testing in live, this doesnt seem to be an issue. Seems to be something only visible in Chrome Dev Tools.
+
+    ![alt text](image of rotation screen*******)
 
 ### Known Bugs/Improvements   
 + I would like to have provided an image or message to confirm if the answer was correct or incorrect.  I tried to insert a div using JavaScript to provide a correct or incorrect message, but couldn't quite get the code to provide the correct user feedback. Was only applying to one class type.  As a temporary fix, i used CSS to style an after pseudo class to insert a tick or cross to provide additional user feedback.
