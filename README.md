@@ -171,6 +171,16 @@ Additional features that I would like to include in a future release would be to
 #### Validation
 I used the W3C Markup Validation Service to check the Markup and W3C CSS Validation Service to check the CSS validity of the site.  I also used JSHint to check the functionality of my JavaScript code.  I used these during and at the end of the project to regularly identify issues.  
 
++ CSS validation 
+![alt text]
++ HTML Validation
+![alt text]
+![alt text]
+![alt text]
+![alt text]
++ JSHint validation
+![alt text]
+
 I also referred to Google Chrome Tools and Lighthouse reports to check details were ok.  This did flag a couple of issues throughout the project like contrast issues that were reported and missing meta description on finish.html page which was giving this a low SEO score.
 
 I have tested this on Google Chrome, Firefox, and Microsoft Edge browsers and no issues with the code/behaviour of the quiz were found.  I have also tested this in production using an Android mobile.  

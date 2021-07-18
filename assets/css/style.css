@@ -176,7 +176,7 @@ i {
     .answer:hover {
       background: #FFD700 ;
     }
-  }
+}
 
 .game-area > h3 {
     font-weight: bold;
@@ -309,6 +309,7 @@ i {
 .error-page a:hover {
     background-color: #c23616;
 }
+
 /* Media Query */
 
 /* To prevent rotating on landscape view on smaller mobile devices */
@@ -316,6 +317,7 @@ i {
     #turn-screen { 
         display: none; 
     }  
+    
     .container, .container1 {
         display: flex;
     }
