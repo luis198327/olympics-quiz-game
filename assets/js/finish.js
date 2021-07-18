@@ -41,3 +41,11 @@ let medal = document.getElementById('medal');
     location.replace("404error.html");
 }
 
+//Following finds the height and then resets backgroundImage to not show when 420px or below
+
+var h = window.outerHeight;
+let minHeight = "420";
+
+if(h <= minHeight) {  
+    body.style.backgroundImage = 'none';
+}
