@@ -149,6 +149,8 @@ Additional features that I would like to include in a future release would be to
 
  + With the use of media queries, these have been set at certain break points set at max-width.  The site and pages respond when the screen size decreases.  I have tested this based on the question which has the most content and longer answers as this fills the page screen more.  All break points in a responsive page work fine down to at least 300px wide.  Even using Chrome Tools and setting the screen as a Galaxy Fold (280px wide) seems to work perfectly fine.
 
++ While testing the media queries, I noticed on smaller devices if the orientation changed to landscape, then the layout of the quiz would look odd with elements over hanging one another etc. This has been fixed so that a message pops up to rotate screen back to portrait mode.  Further details can be found below under the issues i overcome secion. 
+
  + Having added the dropdown menu as a late change to the scope, on testing this, I decided that the Restart/Home option from the dropdown content was not needed on the index.html page.  This is due to the fact that the page the user would be on is on the home/restart page. 
 
 #### Validation
@@ -169,8 +171,17 @@ I also referred to Google Chrome Tools and Lighthouse reports to check details w
 
 + I noticed that when running lighthouse reports that the Best Practices section was showing an error message being logged to the console.  The error message was "TypeError: Cannot set property 'innerHTML' of null". Reading online about this, it suggested that the JS script file was not at the end of the body section (eg in the head element), or I was referring to the wrong ID. But after checking this wasnt the case, as the correct ID was being used at line 197 of the script.js file and the script was at the end of the body section.  I also ran the code into JSHint just to check and no errors were reported.  Therefore i re-reviewed each HTML page and removed unnecessary references to the JS files in my directory, removing ones from index.html and finish.html. Rerunning the lighthouse reports has removed this error referring to the js line 197.
 
++ When testing the media queries and specifically on rotation, I noticed the layout looked odd when a user would switch their device (notiably a mobile device) to landscape mode.  
+    + I tried to find a way to prevent this from happening and searched online for a fix. I started to investigate this using javascript and found a couple of ways but comments suggested this was either brand new technology (to suggest this may not work or have been fully verified on all platforms) or wasn't something that I wanted exactly for my project. 
+    + I therefore found a resource using CSS and apply another media query on codebox (refer to code section). I then manipulated this code so that it works with mine, and used an image from font awesome to show the rotation symbol. 
+    + This was working ok but on the finish.html and 404error.html pages this wasnt working.  This was due to there being no overall container. Therefore a new class of container1 was created and applied to the CSS styling sheet.
+    + While the code was working, I then noticed a further issue. On the finish.html page subject to the final result achieved, an image would be displayed which is provided via a function in the finish.js file. When the screen goes from portrait to landscape for a smaller device, the message displayed but the image stayed put. This wasn't what I wanted to happen. I therefore researched online and using W3Schools I was able to manipulate code so that it would remove the background image when the window's outer height was reached.
+    + When further testing of this was carried out, I realised that the image was still not being removed when the device was rotated.  It would only update if i applied a hard reload of a web page and then keep that change (so either with the image showing or not even after changing the orientation). I therefore found on stack overflow a piece of code which would do this and added this to the finish.js file. Refer to the code section below. This now auto updates although you can see the image very briefly when the orientation changes.  From further research i cannot find this solution.
+
 ### Known Bugs/Improvements   
 + I would like to have provided an image or message to confirm if the answer was correct or incorrect.  I tried to insert a div using JavaScript to provide a correct or incorrect message, but couldn't quite get the code to provide the correct user feedback. Was only applying to one class type.  As a temporary fix, i used CSS to style an after pseudo class to insert a tick or cross to provide additional user feedback.
+
++ As mentioned in the issues I overcome, I have managed to fix the auto rotate of a small device from showing the page contents.  However if a user once landed on the finish.html page were to rotate this, the medal imagery or false start image would display for a very brief second. I would imagine this might be fixed with some time function or order of code, but haven't been able to resolve this minor bug I would like to improve.
 
 ## Deployment
 My project was developed using the IDE, Gitpod. 
@@ -206,6 +217,7 @@ Or simply clone this repository directly into the editor of your choice by pasti
 + [stack overflow](https://stackoverflow.com/questions/17212094/fill-background-color-left-to-right-css) - used to obtain initial code which i then tweaked to provide a hover effect when selecting an answer.
 + I used code from W3Schools to create the hover over menu/nav and adapted this to the styling, positioning, wording for my quiz game.  The menu is situated in the top left of each of the 3 main HTML pages.
 + [code box](https://code-boxx.com/lock-screen-orientation/) - used CSS media code to restrict landscape view being used on smaller devices - in other words to display a message to rotate back to portrait mode. I have adapted the code so that it is using min-height instead, so it seems to allow use for bigger devices like tablets not matter if its portrait or landscape mode.
++ [stack overflow](https://stackoverflow.com/questions/17708869/how-to-reload-the-webpage-when-orientation-changes) - used to add code to refresh the page when the devices orientation changes.
 
 ### Media
 + [rawpixel](https://www.rawpixel.com/) - used to obtain welcome image of tokyo background.
