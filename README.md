@@ -116,7 +116,6 @@ Additional features that I would like to include in a future release would be to
 + [Icons8](https://icons8.com/) - used to import the favicon olympic ring icon image.
 + [Favicon](https://favicon.io/) - used to convert the image from Icon8 into an ico file.
 + [W3Schools](https://www.w3schools.com/) - used to refer to as additional support and to get ideas for how to use code in my webpage. 
-+ [stack overflow](https://stackoverflow.com/questions/17212094/fill-background-color-left-to-right-css) - code used specified on code section below to assist with hover over effect on answers.
 + [W3C HTML Validation Service](https://validator.w3.org/#validate_by_input) - used to check the markup validity of Web documents in HTML.
 + [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input) - used to check the validity of my CSS in the project.
 + [JSHint](https://jshint.com/) - used to check the validity of my JavaScript code in my project.
@@ -155,6 +154,8 @@ Additional features that I would like to include in a future release would be to
 
  + Having added the dropdown menu as a late change to the scope, on testing this, I decided that the Restart/Home option from the dropdown content was not needed on the index.html page.  This is due to the fact that the page the user would be on is on the home/restart page. 
 
+ + I didn't like how the hover effect was behaving when hovering over and selecting an answer.  On desktop/laptop devices this was working fine but when using a mobile or other touch device, the yellow background was then staying put until the next selection was chosen.  This is not great for a UX perspective.  Having to tried to correct this, the easiest way was to add a CSS media query, which would effectively remove the hover over effect for these devices.
+
 #### Validation
 I used the W3C Markup Validation Service to check the Markup and W3C CSS Validation Service to check the CSS validity of the site.  I also used JSHint to check the functionality of my JavaScript code.  I used these during and at the end of the project to regularly identify issues.  
 
@@ -183,7 +184,7 @@ I also referred to Google Chrome Tools and Lighthouse reports to check details w
 ### Known Bugs/Improvements   
 + I would like to have provided an image or message to confirm if the answer was correct or incorrect.  I tried to insert a div using JavaScript to provide a correct or incorrect message, but couldn't quite get the code to provide the correct user feedback. Was only applying to one class type.  As a temporary fix, i used CSS to style an after pseudo class to insert a tick or cross to provide additional user feedback.
 
-+ As mentioned in the issues I overcome, I have managed to fix the auto rotate of a small device from showing the page contents.  However if a user once landed on the finish.html page were to rotate this, the medal imagery or false start image would display for a very brief second. I would imagine this might be fixed with some time function or order of code, but haven't been able to resolve this minor bug I would like to improve.
++ As mentioned in the issues I overcome, I have managed to fix the auto rotate of a small device from showing the page contents.  However if a user once landed on the finish.html page were to rotate this, the medal imagery or false start image would display for a very brief second. I would imagine this might be fixed with some time function or order of code, but haven't been able to resolve this minor bug I would like to improve.  Although further testing of this seems that is might be a red herring.  When i tested this on my mobile in the production environment, the image was not displayed on the rotation of the screen.  Therefore i am confident this is no longer a bug but keeping this to monitor for any future release.
 
 ## Deployment
 My project was developed using the IDE, Gitpod. 
@@ -220,6 +221,7 @@ Or simply clone this repository directly into the editor of your choice by pasti
 + I used code from W3Schools to create the hover over menu/nav and adapted this to the styling, positioning, wording for my quiz game.  The menu is situated in the top left of each of the 3 main HTML pages.
 + [code box](https://code-boxx.com/lock-screen-orientation/) - used CSS media code to restrict landscape view being used on smaller devices - in other words to display a message to rotate back to portrait mode. I have adapted the code so that it is using min-height instead, so it seems to allow use for bigger devices like tablets not matter if its portrait or landscape mode.
 + [stack overflow](https://stackoverflow.com/questions/17708869/how-to-reload-the-webpage-when-orientation-changes) - used to add code to refresh the page when the devices orientation changes.
++ [Developer](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/hover#Example) - used to seek a way of disabling hover over effect on touch devices.
 
 ### Media
 + [rawpixel](https://www.rawpixel.com/) - used to obtain welcome image of tokyo background.
