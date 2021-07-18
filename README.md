@@ -6,7 +6,7 @@ The Code Institute project brief was to create and build an interactive front en
 
 <!provide link to responsive preview >
 
-## Olympics Quiz Game (provide link to final web page here) 
+## Olympics Quiz Game [https://luis198327.github.io/olympics-quiz-game/](https://luis198327.github.io/olympics-quiz-game/) 
 The website has been created to provide a fun quiz game based on the up comming Olympic Games in Tokyo, Japan.  It is aimed at providing some general knowledge of the country and the games themselves in 2021 and past games.
 
 ## User Experience (UX)
@@ -196,7 +196,7 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
 + Within the source section drop-down menu, select Main (or Master Branch) and click on save.
 + Once this has been saved, the page will confirm that the site is ready to be published and provides the URL address.
 + Refreshing the page will confirm the website has been deployed, again providing the URL address.
-+ The deployed URL is [https://luis198327.github.io/olympics-quiz-game/](https://luis198327.github.io/olympics-quiz-game/)}
++ The deployed URL is [https://luis198327.github.io/olympics-quiz-game/](https://luis198327.github.io/olympics-quiz-game/)
 
 The deployed site will update automatically upon new commits to the main (or master) branch. For the site to deploy correctly on GitHub pages, the landing page must be named index.html.
 
