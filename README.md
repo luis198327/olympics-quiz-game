@@ -45,7 +45,9 @@ A dropdown menu (late change) has also been created and is situated on the 3 mai
 ### Skeleton
 I used wireframes to put together a very basic mock-up of the site based on a desktop/tablet and mobile devices. This did develop during the project as my understanding of JavaScript progressed.  I was going to keep it to 2 html pages, but found it easier to creare a third page for the results page separately. A fourth page has also been added (404 error), but this should not be visible providing the code works fine. 
 
-The wireframe also does not show a late change made which was to include a dropdown menu.  This was always in my thoughts but wasnt sure if this would be effective or appropriate, but adds a nice touch.
+The wireframe also does not show two late changes. 
++ The first was to include a dropdown menu.  This was always in my thoughts but wasnt sure if this would be effective or appropriate, but adds a nice touch.
++ The second was to include a title on the quiz.html page. I felt when this was almost finalised and designed that something was missing and for better UX, I decided to add this to this page so throughout the quiz questions, the site goals are enhanced further.
 
 The wireframe can be found <<insert wireframe>>.
 
