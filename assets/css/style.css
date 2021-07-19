@@ -252,7 +252,7 @@ i {
     height: 2.5rem;
     text-align: center;
     margin: 0 auto;
-    padding: 0.5rem;
+    padding: 0.5rem 0.5rem 0rem 0.5rem;
 }
 
 /** 404 error page styling */
