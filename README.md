@@ -166,7 +166,15 @@ Additional features that I would like to include in a future release would be to
 
  + When testing the quiz functionality, it became clear that there was the ability to click multiple times on one question, and it would then race through and answer the remaining questions unintentionally, which is bad UX. I was going to reduce the timer that moves on to the next question and add this as a bug, but resolved the issue.  I added a variable and if statement to accept an answer at a certain time and then to prevent once an answer has been selected. 
 
- + With the use of media queries, these have been set at certain break points set at max-width.  The site and pages respond when the screen size decreases.  I have tested this based on the question which has the most content and longer answers as this fills the page screen more.  All break points in a responsive page work fine down to at least 300px wide.  Even using Chrome Tools and setting the screen as a Galaxy Fold (280px wide) seems to work perfectly fine.
+ + With the use of media queries, these have been set at certain break points set at max-width.  The site and pages respond when the screen size decreases.  I have tested this based on the question which has the most content and longer answers as this fills the page screen more.  All break points in a responsive page work fine down to at least 300px wide.  Even using Chrome Tools and setting the screen as a Galaxy Fold (280px wide) seems to work perfectly fine too, even when the answer is selected and the feedback tick or cross symbol is then inserted. See screen shots below:
+
+    Screenshot of longest question:
+    
+    ![alt text](https://github.com/luis198327/olympics-quiz-game/blob/main/assets/images/largest-question-test.JPG)
+
+    Screenshot of Galaxy Fold test:
+
+    ![alt text](https://github.com/luis198327/olympics-quiz-game/blob/main/assets/images/galaxy-fold-test.JPG)
 
 + While testing the media queries, I noticed on smaller devices if the orientation changed to landscape, then the layout of the quiz would look odd with elements over hanging one another etc. This has been fixed so that a message pops up to rotate screen back to portrait mode.  Further details can be found below under the issues I overcome section. 
 
