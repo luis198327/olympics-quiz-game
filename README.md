@@ -166,30 +166,33 @@ Additional features that I would like to include in a future release would be to
 
  + Having added the dropdown menu as a late change to the scope, on testing this, I decided that the Restart/Home option from the dropdown content was not needed on the index.html page.  This is due to the fact that the page the user would be on is on the home/restart page. 
 
- + I didn't like how the hover effect was behaving when hovering over and selecting an answer.  On desktop/laptop devices this was working fine but when using a mobile or other touch device, the yellow background was then staying put until the next selection was chosen.  This is not great for a UX perspective.  Having to tried to correct this, the easiest way was to add a CSS media query, which would effectively remove the hover over effect for these devices. <<<add further comments that this shows in dev but not in prod>>>
+ + I didn't like how the hover effect was behaving when hovering over and selecting an answer.  On desktop/laptop devices this was working fine but when using a mobile or other touch device, the yellow background was then staying put until the next selection was chosen.  This is not great for a UX perspective.  Having to tried to correct this, the easiest way was to add a CSS media query, which would effectively remove the hover over effect for these devices. On initial testing of this fix, it seemed to work fine oin Chrome Dev Tools, but when published to the live environment it appeared that mobiles were still not behaving correctly, but tablets were ok.  I have therefore added a little more CSS to the same ID of final to add re pointer devices ok.  Having tested this in the test and live environments, I believe the hover over effect now only appears when there is as mouse pointer or touch pad being used.
 
 #### Validation
-I used the W3C Markup Validation Service to check the Markup and W3C CSS Validation Service to check the CSS validity of the site.  I also used JSHint to check the functionality of my JavaScript code.  I used these during and at the end of the project to regularly identify issues.  
+I used the W3C Markup Validation Service to check the Markup and W3C CSS Validation Service to check the CSS validity of the site.  I also used JSHint to check the functionality of my JavaScript code.  I used these during and at the end of the project to regularly identify issues.  Screenshots are as shown for each file:
 
 + CSS validation 
 ![alt text]
 + HTML Validation
-![alt text]
-![alt text]
-![alt text]
-![alt text]
+    + index.html
+    ![alt text]
+    + quiz.html
+    ![alt text]
+    + finish.html
+    ![alt text]
+    + 404error.html
+    ![alt text]
 + JSHint validation
-![alt text]
+    + finish.js
+    ![alt text]
+    + script.js 
+    ![alt text]
 
 I also referred to Google Chrome Tools and Lighthouse reports to check details were ok.  This did flag a couple of issues throughout the project like contrast issues that were reported and missing meta description on finish.html page which was giving this a low SEO score.
 
 I have tested this on Google Chrome, Firefox, and Microsoft Edge browsers and no issues with the code/behaviour of the quiz were found.  I have also tested this in production using an Android mobile.  
 
 Google Chrome Dev tools have been used and the responsiveness seems to be fine on all mobile and table devices provided, and a general responsiveness check with different widths and heights also seem to fine.  I have check the screen width as low as a Galaxy Fold set at 280px wide.
-
-<<Update when tested - All HTML pages, and the CSS styling page and javascript have passed with no errors/issues highlighted.>>
-
-<<Add screen shots of the code passing the validation sites>>
 
 #### Issues I Overcome
 + I was having trouble with the if else statement under the finish.html page to correctly show the message and medal image. I manage to overcome this by expanding the if else statement and setting the operator to AND (&&) symbols.  I was using >= signs which was causing the code to behave not as intended should the score go beyond 10 in error.  A 404 error message has also been embeded just in case to prevent issues and a bad UX. 
@@ -209,10 +212,14 @@ Google Chrome Dev tools have been used and the responsiveness seems to be fine o
 
     ![alt text](https://github.com/luis198327/olympics-quiz-game/blob/main/assets/images/rotate-device.JPG)
 
++ I was struggling to find a solution to stop the hover over effect when selecting an answer on touch devices.  When testing I was getting odd and inconsistent results using Chrome Dev Tools and when the site was published for further final testing. I believe the addition of adding "and (pointer: fine)" to the media query within the CSS has resolved this issue.
+
 ### Known Bugs/Improvements   
 + I would like to have provided an image or message to confirm if the answer was correct or incorrect.  I tried to insert a div using JavaScript to provide a correct or incorrect message, but couldn't quite get the code to provide the correct user feedback. Was only applying to one class type.  As a temporary fix, i used CSS to style an after pseudo class to insert a tick or cross to provide additional user feedback. I have noticed when testing on a mobile device that the cross symbol is not as effective on a desktop browser. I assume this is to do with the CSS unicode used to obtain this symbol.
 
 + As mentioned in the issues I overcome, I have managed to fix the auto rotate of a small device from showing the page contents.  However if a user once landed on the finish.html page were to rotate this, the medal imagery or false start image would display for a very brief second. I would imagine this might be fixed with some time function or order of code, but haven't been able to resolve this minor bug I would like to improve.  Although further testing of this seems that is might be a red herring.  When i tested this on my mobile in the production environment, the image was not displayed on the rotation of the screen.  Therefore i am confident this is no longer a bug but keeping this to monitor for any future release.
+
++ There might be a bug with the hover over effect when selecting an answer on touch devices.  I was getting inconsistent results using Chrome Dev Tools and testing the site in production. I believe the addition of adding "and (pointer: fine)" to the media query within the CSS has resolved this issue, but might be something to keep an eye on and resolve in a later release.
 
 ## Deployment
 My project was developed using the IDE, Gitpod. 
