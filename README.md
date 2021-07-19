@@ -99,7 +99,7 @@ Should the calculation of the score not be correct (either over 10 or below zero
 
 ![alt text](https://github.com/luis198327/olympics-quiz-game/blob/main/assets/images/responsive-404error.JPG)
 
-I have also implemented a late change to provide a menu option which will allow a user to restart the quiz should they wish to during the current game.  There will also be links to sites so they can learn about the Tokyo games, and even find the answers should they wish to cheat.  The restart option is not shown on the index.html page.
+I have also implemented a late change to provide a menu option which will allow a user to restart the quiz should they wish to during the current game.  There will also be links to sites so they can learn about the Tokyo games, and even find the answers should they wish to cheat.  These links open in a new tab as per standard UX requirements. The restart option is not shown on the index.html page, as this is not required to be shown there.
 
 ![alt text](https://github.com/luis198327/olympics-quiz-game/blob/main/assets/images/dropdownmenu.JPG)
 
@@ -143,17 +143,21 @@ Additional features that I would like to include in a future release would be to
 ### Testing User Stories From User Experience (UX) Section
 #### Site Owners Goals
 + The main goal of the site is to provide a challenging and informative quiz to entertain online users.
-
-    <<Add content>>
+    + The quiz consists of 10 questions from a library of 20 questions, which can be easily be extended further.
+    + The user will unlikely to be presented with the same set of questions which will add variety and make this more challenging so that it won't be easy to repeat the quiz to achieve a higher result.
+    + The question set has been created to provide a coverage of topics on the Summer Olympic Games as a whole and with the host country of Japan, and its captial of Tokyo.
+    + The menu dropdown provides users with a couple of resources to read up on and learn further.
 
 #### External User Goals
 + The site’s users want to play an online quiz to test general/specific knowledge based on the Olympics Games and the country of Japan.
-
-<<Add content>>
+    + The question library holds 20 questions and each attempt will consist of 10 questions. These are based on the Summer Olympic Games in general and of the host country Japan to make this educational.
 
 + Able to keep track of scores and improve their scores when wishing to attempt the quiz again.
-
-<<Add content>>
+    + Once an answer is provided, a user is presented with a green tick and background if correct or a red cross and background if incorrect.
+    + The score board at the bottom of the quiz will update when an answer is correctly selected.
+    + At the end of the quiz, the user is presented with their score, and medal if they achieve a score greater than 1 (otherwise the gun is fired for a false start).
+    + There is a button then to restart the quiz to reattempt a better score.
+    + Throughout the quiz, the dropdown menu can be selected to go to external resources or to restart the quiz should the user wish to begin again before the end of the quiz.
 
 ### Further Testing
  + When testing different scores on the finish page, I noticed the image and corresponding message were not consistent when a score of zero was awarded.  The Bronze medal was shown but the message stated was the user won Gold.  I have therefore expanded the if else statement to add a further 2 conditions.  The first was so that if the score equals zero, a new false start image and message is displayed.  Anything else should result in a 404 error message to presented, which is styled to look like the Japanese flag (the zero being a red circle).
@@ -172,31 +176,51 @@ Additional features that I would like to include in a future release would be to
 I used the W3C Markup Validation Service to check the Markup and W3C CSS Validation Service to check the CSS validity of the site.  I also used JSHint to check the functionality of my JavaScript code.  I used these during and at the end of the project to regularly identify issues.  Screenshots are as shown for each file:
 
 + CSS validation - all passed:
+
 ![alt text](https://github.com/luis198327/olympics-quiz-game/blob/main/assets/images/css-validation.JPG)
+
 + HTML Validation - all 4 pages have passed:
     + index.html
+
     ![alt text](https://github.com/luis198327/olympics-quiz-game/blob/main/assets/images/index-html-validation.JPG)
+
     + quiz.html
+
     ![alt text](https://github.com/luis198327/olympics-quiz-game/blob/main/assets/images/quiz-html-validation.JPG)
+
     + finish.html
+
     ![alt text](https://github.com/luis198327/olympics-quiz-game/blob/main/assets/images/finish-html-validation.JPG)
+
     + 404error.html
+
     ![alt text](https://github.com/luis198327/olympics-quiz-game/blob/main/assets/images/404error-html-validation.JPG)
+
 + JSHint validation - only show warnings. No errors reported:
     + finish.js
+
     ![alt text](https://github.com/luis198327/olympics-quiz-game/blob/main/assets/images/finish-jshint-validation.JPG)
+
     + script.js 
+
     ![alt text](https://github.com/luis198327/olympics-quiz-game/blob/main/assets/images/script-jshint-validation.JPG)
 
 I also referred to Google Chrome Tools and Lighthouse reports to check details were ok.  This did flag a couple of issues throughout the project like contrast issues that were reported and missing meta description on finish.html page which was giving this a low SEO score. But all 4 pages now show great scores as shown:
 
 + index.html
+
     ![alt text](https://github.com/luis198327/olympics-quiz-game/blob/main/assets/images/index-lighthouse.JPG)
+
 + quiz.html
+
     ![alt text](https://github.com/luis198327/olympics-quiz-game/blob/main/assets/images/quiz-lighthouse.JPG)
+
 + finish.html
+
     ![alt text](https://github.com/luis198327/olympics-quiz-game/blob/main/assets/images/finish-lighthouse.JPG)
+
 + 404error.html
+
     ![alt text](https://github.com/luis198327/olympics-quiz-game/blob/main/assets/images/404error-lighthouse.JPG)
 
 I have tested this on Google Chrome, Firefox, and Microsoft Edge browsers and no issues with the code/behaviour of the quiz were found.  I have also tested this in production using an Android mobile.  
