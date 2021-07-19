@@ -33,7 +33,7 @@ i {
     position: relative;
 }
 
-/* NAV BAR - used on all pages*/
+/* MENU DROPDOWN - used on all pages except 404error.html*/
 .dropbtn {
     background-color: rgb(86, 165, 235);
     color: #000;
@@ -127,6 +127,10 @@ i {
 
 /*quiz.html specific styling */
 /*question area */
+#main-title {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
 
 #question-no {
     margin-bottom: 0.5rem;
@@ -138,7 +142,7 @@ i {
     font-size: 1.4rem;
 }
 
-.game-area h2 {
+.game-area h2, .game-area h1 {
     text-align: center;
     padding: 0.2rem;
     margin-top: 0.5rem;
@@ -171,7 +175,7 @@ i {
 
 }
 
-/* Media query to remove hover over effect when not applicable */
+/* Hover over effect for answer option within a media query, so this is removed on touch devices as an example */
 @media (hover: hover) and (pointer: fine) {
     .answer:hover {
       background: #FFD700 ;
@@ -184,7 +188,7 @@ i {
 }
 
 #score-board {
-    padding: 1rem;
+    padding: 0.65rem;
     margin: 0.1rem;
 }
 
@@ -198,7 +202,6 @@ i {
 }
 
 /* Styling applied where correct or incorrect answer given */
-
 .correct {
     background: #008000;
 }
@@ -230,7 +233,6 @@ i {
 }
 
 /*finish.html specific styling */
-
 .results-area {
     height: 100vh;
     width: 100vw;
@@ -255,8 +257,7 @@ i {
     padding: 0.5rem 0.5rem 0rem 0.5rem;
 }
 
-/** 404 error page styling */
-
+/* 404 error page styling */
 .error-page {
     height: 100vh;
     width: 100vw;
@@ -266,7 +267,7 @@ i {
     flex-direction: column;
 }
 
-.error-page h2 {
+.error-page h1 {
     margin-bottom: 5rem;
 }
 
@@ -310,7 +311,7 @@ i {
     background-color: #c23616;
 }
 
-/* Media Query */
+/* Media Queries for screen rotation and size */
 
 /* To prevent rotating on landscape view on smaller mobile devices */
 @media screen and (min-height: 420px)  {
@@ -384,7 +385,7 @@ i {
     }
 
     #score-board {
-        margin-top: 1rem;
+        margin-top: 0.8rem;
     }
 }
 
