@@ -171,28 +171,37 @@ Additional features that I would like to include in a future release would be to
 #### Validation
 I used the W3C Markup Validation Service to check the Markup and W3C CSS Validation Service to check the CSS validity of the site.  I also used JSHint to check the functionality of my JavaScript code.  I used these during and at the end of the project to regularly identify issues.  Screenshots are as shown for each file:
 
-+ CSS validation 
-![alt text]
-+ HTML Validation
++ CSS validation - all passed:
+![alt text](https://github.com/luis198327/olympics-quiz-game/blob/main/assets/images/css-validation.JPG)
++ HTML Validation - all 4 pages have passed:
     + index.html
-    ![alt text]
+    ![alt text](https://github.com/luis198327/olympics-quiz-game/blob/main/assets/images/index-html-validation.JPG)
     + quiz.html
-    ![alt text]
+    ![alt text](https://github.com/luis198327/olympics-quiz-game/blob/main/assets/images/quiz-html-validation.JPG)
     + finish.html
-    ![alt text]
+    ![alt text](https://github.com/luis198327/olympics-quiz-game/blob/main/assets/images/finish-html-validation.JPG)
     + 404error.html
-    ![alt text]
-+ JSHint validation
+    ![alt text](https://github.com/luis198327/olympics-quiz-game/blob/main/assets/images/404error-html-validation.JPG)
++ JSHint validation - only show warnings. No errors reported:
     + finish.js
-    ![alt text]
+    ![alt text](https://github.com/luis198327/olympics-quiz-game/blob/main/assets/images/finish-jshint-validation.JPG)
     + script.js 
-    ![alt text]
+    ![alt text](https://github.com/luis198327/olympics-quiz-game/blob/main/assets/images/script-jshint-validation.JPG)
 
-I also referred to Google Chrome Tools and Lighthouse reports to check details were ok.  This did flag a couple of issues throughout the project like contrast issues that were reported and missing meta description on finish.html page which was giving this a low SEO score.
+I also referred to Google Chrome Tools and Lighthouse reports to check details were ok.  This did flag a couple of issues throughout the project like contrast issues that were reported and missing meta description on finish.html page which was giving this a low SEO score. But all 4 pages now show great scores as shown:
+
++ index.html
+    ![alt text](https://github.com/luis198327/olympics-quiz-game/blob/main/assets/images/index-lighthouse.JPG)
++ quiz.html
+    ![alt text](https://github.com/luis198327/olympics-quiz-game/blob/main/assets/images/quiz-lighthouse.JPG)
++ finish.html
+    ![alt text](https://github.com/luis198327/olympics-quiz-game/blob/main/assets/images/finish-lighthouse.JPG)
++ 404error.html
+    ![alt text](https://github.com/luis198327/olympics-quiz-game/blob/main/assets/images/404error-lighthouse.JPG)
 
 I have tested this on Google Chrome, Firefox, and Microsoft Edge browsers and no issues with the code/behaviour of the quiz were found.  I have also tested this in production using an Android mobile.  
 
-Google Chrome Dev tools have been used and the responsiveness seems to be fine on all mobile and table devices provided, and a general responsiveness check with different widths and heights also seem to fine.  I have check the screen width as low as a Galaxy Fold set at 280px wide.
+Google Chrome Dev tools have been used and the responsiveness seems to be fine on all mobile and table devices provided as part of Dev Tools, and a general responsiveness check with different widths and heights also seem fine.  I have check the screen width as low as a Galaxy Fold set at 280px wide.
 
 #### Issues I Overcome
 + I was having trouble with the if else statement under the finish.html page to correctly show the message and medal image. I manage to overcome this by expanding the if else statement and setting the operator to AND (&&) symbols.  I was using >= signs which was causing the code to behave not as intended should the score go beyond 10 in error.  A 404 error message has also been embeded just in case to prevent issues and a bad UX. 
