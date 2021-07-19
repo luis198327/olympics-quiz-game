@@ -1,17 +1,53 @@
 # Olympics Quiz Game
 
+## Contents Table
+- [Code Institute Mile Stone 2 Project - Interactive Front End Site](#code-institute-mile-stone-2-project---interactive-front-end-site)
+- [User Experience](#user-experience)
+  * [Strategy - User Stories](#strategy---user-stories)
+    + [Site Owners Goals](#site-owners-goals)
+    + [External User Goals](#external-user-goals)
+  * [Scope](#scope)
+  * [Structure](#structure)
+  * [Skeleton](#skeleton)
+  * [Surface](#surface)
+    + [Typography](#typography)
+    + [Colours](#colours)
+    + [Imagery](#imagery)
+- [Features](#features)
+  * [Features Left To Implement](#features-left-to-implement)
+- [Technologies Used](#technologies-used)
+  * [Languages Used](#languages-used)
+  * [Frameworks Libraries And Programs Used](#frameworks-libraries-and-programs-used)
+- [Testing](#testing)
+  * [Testing User Stories From User Experience Section](#testing-user-stories-from-user-experience-section)
+    + [Site Owners Goals](#site-owners-goals-1)
+    + [External User Goals](#external-user-goals-1)
+  * [Further Testing](#further-testing)
+    + [Validation](#validation)
+    + [Issues I Overcome](#issues-i-overcome)
+  * [Known Bugs And Improvements](#known-bugs-and-improvements)
+- [Deployment](#deployment)
+  * [Making A Local Clone](#making-a-local-clone)
+- [Credits](#credits)
+  * [Content](#content)
+  * [Code](#code)
+  * [Media](#media)
+  * [Resources](#resources)
+  * [Acknowledgements](#acknowledgements)
+
 ## Code Institute Mile Stone 2 Project - Interactive Front End Site
 
 The Code Institute project brief was to create and build an interactive front end site.  The site should respond to users' actions, allow users to engage with data, alter the way the site displays the information to achieve their preferred goals, using HTML, CSS and JavaScript while following UX industry conventions. As per the Code Institute course and methods, this was designed from a Desktop to Mobile site, so uses media queries within the CSS to have max-width break points. 
 
 This project is for educational use only.  If you wish to open an external link in a different tab, please press Crtl or Command + Click to do this.  Github prevents/doesn't allow those links to open in a new tab by default.
 
-![alt text](https://github.com/luis198327/olympics-quiz-game/blob/main/assets/images/responsive-index.JPG)
-
-## Olympics Quiz Game [https://luis198327.github.io/olympics-quiz-game/](https://luis198327.github.io/olympics-quiz-game/) 
 The website has been created to provide a fun quiz game based on the upcoming Olympic Games in Tokyo, Japan.  It is aimed at providing some general knowledge of the country and the games themselves in 2021 and past games.
 
-## User Experience (UX)
+The deployed site is [https://luis198327.github.io/olympics-quiz-game/](https://luis198327.github.io/olympics-quiz-game/) 
+
+![alt text](https://github.com/luis198327/olympics-quiz-game/blob/main/assets/images/responsive-index.JPG)
+
+## User Experience
 
 ### Strategy - User Stories
 #### Site Owners Goals
@@ -119,7 +155,7 @@ Additional features that I would like to include in a future release would be to
 + CSS3
 + JavaScript
 
-### Frameworks, Libraries & Programs Used
+### Frameworks Libraries And Programs Used
 + [GitPod](https://www.gitpod.io/) - used as the development environment for my website. I also used Git for Version Control in the project.
 + [GitHub](https://github.com/) - used to store the projects code after being pushed from GitPod.
 + [Balsamiq](https://balsamiq.com/) - used to create the wireframes during the design process.
@@ -140,9 +176,10 @@ Additional features that I would like to include in a future release would be to
 + [Unicode table](https://unicode-table.com/en/) - used to find the CSS unicode to allow me to insert a tick and cross symbol to provide user feedback if a correct answer is provided.
 + [Free images](https://www.freeimages.com/) - used to obtain images of medals. Refer to credits section for additional details.
 + [Flatuicolors](https://flatuicolors.com/palette/gb) - used to obtain colours on 404 error page.
++ [Ecotrust](https://ecotrust-canada.github.io/markdown-toc/) - used to create contents page for README.md file.
 
 ## Testing
-### Testing User Stories From User Experience (UX) Section
+### Testing User Stories From User Experience Section
 #### Site Owners Goals
 + The main goal of the site is to provide a challenging and informative quiz to entertain online users.
     + The quiz consists of 10 questions from a library of 20 questions, which can easily be extended further.
@@ -257,7 +294,7 @@ Google Chrome Dev tools have been used and the responsiveness seems to be fine o
 
 + I was struggling to find a solution to stop the hover over effect when selecting an answer on touch devices.  When testing I was getting odd and inconsistent results using Chrome Dev Tools and when the site was published for further final testing. I believe the addition of adding "and (pointer: fine)" to the media query within the CSS has resolved this issue.
 
-### Known Bugs/Improvements   
+### Known Bugs And Improvements   
 + I would like to have provided an image or message to confirm if the answer was correct or incorrect.  I tried to insert a div using JavaScript to provide a correct or incorrect message, but couldn't quite get the code to provide the correct user feedback. Was only applying to one class type.  As a temporary fix, I used CSS to style an after pseudo class to insert a tick or cross to provide additional user feedback. I have noticed when testing on a mobile device that the cross symbol is not as effective on a desktop browser. I assume this is to do with the CSS unicode used to obtain this symbol.
 
 + As mentioned in the issues I overcome, I have managed to fix the auto rotate of a small device from showing the page contents.  However if a user once landed on the finish.html page were to rotate this, the medal imagery or false start image would display for a very brief second. I would imagine this might be fixed with some time function or order of code, but haven't been able to resolve this minor bug I would like to improve.  Although further testing of this seems that is might be a red herring.  When I tested this on my mobile in the production environment, the image was not displayed on the rotation of the screen.  Therefore I am confident this is no longer a bug but keeping this to monitor for any future release.
