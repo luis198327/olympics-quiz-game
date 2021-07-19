@@ -172,7 +172,7 @@ i {
 }
 
 /* Media query to remove hover over effect when not applicable */
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
     .answer:hover {
       background: #FFD700 ;
     }
