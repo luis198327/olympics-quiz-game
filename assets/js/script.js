@@ -157,7 +157,7 @@ let questionLibrary = [ //questions are stored here
             question: "As at December 2020, organisers believe Japan will have spent how much on the preparation of the Olympic Games?",
             answer1: "$15 billion dollars",
             answer2: "$1.6 trillion dollars",
-            answer3: "$80 millon dollars",
+            answer3: "$80 million dollars",
             answer4: "$30 billion dollars",
             correct: "1"
         },
