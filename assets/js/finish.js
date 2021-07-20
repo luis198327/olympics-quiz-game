@@ -48,7 +48,7 @@ window.onorientationchange = function() {
     window.location.reload(); 
 };
 
-//Following finds the height(taken from W3Schools) and then resets backgroundImage to not show when 420px or below
+//Takes the height (code from W3Schools) and then resets backgroundImage to not show when 420px or below
 
 var h = window.outerHeight;
 let minHeight = "420";

@@ -234,7 +234,6 @@ for (let answer of answers) {
             selectedChoice.parentElement.classList.remove(correctIncorrect);
             newQuestion();
          }, 2000);
-
               
         });
     }
