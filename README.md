@@ -205,11 +205,11 @@ Additional features that I would like to include in a future release would be to
 
  + With the use of media queries, these have been set at certain break points set at max-width.  The site and pages respond when the screen size decreases.  I have tested this based on the question which has the most content and longer answer as this fills the gaming area.  All break points in a responsive page work fine down to at least 300px wide.  Even using Chrome Tools and setting the screen as a Galaxy Fold (280px wide) seems to work perfectly fine too, even when the answer is selected and the feedback tick or cross symbol is then inserted. See screen shots below:
 
-    Screenshot of longest question:
+    Screenshot of longest question and answer options:
     
     ![alt text](https://github.com/luis198327/olympics-quiz-game/blob/main/assets/images/largest-question-test.JPG)
 
-    Screenshot of Galaxy Fold test:
+    Screenshot of Galaxy Fold test for smallest screen width:
 
     ![alt text](https://github.com/luis198327/olympics-quiz-game/blob/main/assets/images/galaxy-fold-test.JPG)
 
@@ -330,7 +330,7 @@ Or simply clone this repository directly into the editor of your choice by pasti
 + All content was written by the developer, unless referenced below.
 
 ### Code
-+ [Stack overflow](https://stackoverflow.com/questions/17212094/fill-background-color-left-to-right-css) - used to obtain initial code which I then tweaked to provide a hover effect when selecting an answer.
++ [Stack overflow](https://stackoverflow.com/questions/17212094/fill-background-color-left-to-right-css) - used to obtain initial code which I then tweaked to provide a hover effect when selecting an answer. Although a lot of this has since been removed following the issue identified on touch devices.
 + I used code from W3Schools to create the hover over menu/nav and adapted this to the styling, positioning, wording for my quiz game.  The menu is situated in the top left of each of the 3 main HTML pages.
 + [Code-boxx](https://code-boxx.com/lock-screen-orientation/) - used CSS media code to restrict landscape view being used on smaller devices - in other words to display a message to rotate back to portrait mode. I have adapted the code so that it's using min-height instead, so it will allow use for bigger devices like tablets no matter if its in portrait or landscape view.
 + [Stack overflow](https://stackoverflow.com/questions/17708869/how-to-reload-the-webpage-when-orientation-changes) - used to add code to refresh the page when the orientation of the device changes.
@@ -339,7 +339,7 @@ Or simply clone this repository directly into the editor of your choice by pasti
 ### Media
 + [Rawpixel](https://www.rawpixel.com/) - used to obtain welcome image of Tokyo background.
 + [Pinterest](https://www.pinterest.co.uk/) - used to obtain the Olympic rings and feathers image on the home page.
-+ [Free images](https://www.freeimages.com/) - used to obtain the images of the 3 medals used on the results/finish page.
++ [Free images](https://www.freeimages.com/photo/medal-1-1306916) - used to obtain the images of the 3 medals used on the results/finish page.
 + [Sportsmatik](https://sportsmatik.com/sports-corner/sports-technology/starter-pistol) - used to obtain the false start image on the results/finish page for when a score equals zero.
 
 ### Resources
