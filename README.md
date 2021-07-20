@@ -302,7 +302,10 @@ Google Chrome Dev tools have been used and the responsiveness seems to be fine o
 + There might be a bug with the hover over effect when selecting an answer on touch devices.  I was getting inconsistent results using Chrome Dev Tools and testing the site in production. I believe the addition of adding "and (pointer: fine)" to the media query within the CSS has resolved this issue having now tested this in production on a mobile and tablet touch device.  But might be something to keep an eye on and resolve in a later release.
 
 ## Deployment
-My project was developed using the IDE, Gitpod. 
+My project was developed using the IDE, Gitpod. I regularly commited my changes using the following git commands:
++ git add - adds new or changed files in my working directory to the Git staging area.
++ git commit - creates a commit, which are snapshots of my entire repository at specific times. 
++ git push - uploads all local branch commits to the corresponding remote branch.
 
 The site was deployed to GitHub pages. The steps to deploy are as follows:
 
