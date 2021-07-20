@@ -164,7 +164,7 @@ Additional features that I would like to include in a future release would be to
 + [Font Awesome](https://fontawesome.com/) - used to import icons into my website for the finish.html page and on screen rotation where the hieght is larger than 420px high.
 + Google Images - used to search for images for website including Olympic rings and hero image.  Details can be found under the Credits section.
 + [Icons8](https://icons8.com/) - used to import the favicon Olympic ring icon image.
-+ [Real Favicon Generator](https://realfavicongenerator.net/) - used to convert the image from Icon8 into an ico file.
++ [Favicon Generator](https://www.favicon-generator.org/) - used to convert the image from Icon8 into an ico file.
 + [W3Schools](https://www.w3schools.com/) - used for additional support and to get ideas for how to use code in my webpage/game. 
 + [W3C HTML Validation Service](https://validator.w3.org/#validate_by_input) - used to check the markup validity of Web documents in HTML.
 + [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input) - used to check the validity of my CSS in the project.
